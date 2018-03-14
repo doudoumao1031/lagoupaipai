@@ -1,0 +1,106 @@
+@import "./mixin.scss";
+
+.main{
+    .lunbo{
+        height: 369px;
+        width: 100%;
+        @include bg-full('bxwt_banner_02.jpg');
+    }
+    .section1{
+        .title{
+            width: 100%;
+            height: 136px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .banner{
+                @include bg-full('baoxiangongsi_title.png');
+                width: 503px;
+                height: 62px;
+            }
+        }
+        .content{
+            margin: 0 auto;
+            width: 1060px;
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            .item{
+                width: 340px;
+                height: 202px;
+                box-sizing: border-box;
+                border: 1px solid #e9e9e9;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 22px;
+                background: #ffffff;
+                i{
+                    color: #ca0f1c;
+                    font-size: 64px;
+                }
+                font-size: 14px;
+                color: rgb(153, 153, 153);
+                text-align: center;
+                margin-bottom: 10px;
+                .top{
+                    font-size: 18px;
+                    color: rgb(51, 51, 51);
+                    margin-bottom: 15px;
+                }      
+                &.active,
+                &:hover{
+                    background: #ca0f1c;
+                    color: #fff !important;
+                    i{
+                        color: #fff !important;
+                    }
+                    .top{
+                        color: #fff !important;
+                    }
+                }            
+            }
+        }
+    }
+    .section2{
+        .title{
+            width: 100%;
+            height: 192px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .banner{
+                @include bg-full('baoxiangongsi_title2.png');
+                width: 432px;
+                height: 98px;
+            }
+        }
+        .content{
+            margin: 0 auto;
+            width: 1060px;
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 62px;
+            .item{
+                height: 117px;
+                width: 176px;
+                background: #fff;
+                box-sizing: border-box;
+                border: 1px solid #efefef;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .banner{
+                    width: 80%;
+                    height: 80%;
+                    @include bg-full('partner.png');
+                }
+            }
+        }
+    }
+}

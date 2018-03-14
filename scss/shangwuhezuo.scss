@@ -1,0 +1,143 @@
+@import "./mixin.scss";
+
+.main{
+    .lunbo{
+        height: 369px;
+        width: 100%;
+        @include bg-full('swhz_banner.jpg');
+    }
+    .section1{
+        .title{
+            width: 100%;
+            height: 136px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .banner{
+                @include bg-full('swhz_title.png');
+                width: 503px;
+                height: 62px;
+            }
+        }
+        .content{
+            margin: 0 auto;
+            width: 1060px;
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            .item{
+                width: 340px;
+                height: 202px;
+                box-sizing: border-box;
+                border: 1px solid #e9e9e9;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 22px;
+                background: #ffffff;
+                i{
+                    color: #ca0f1c;
+                    font-size: 64px;
+                }
+                font-size: 14px;
+                color: rgb(153, 153, 153);
+                text-align: center;
+                margin-bottom: 10px;
+                .top{
+                    font-size: 18px;
+                    color: rgb(51, 51, 51);
+                    margin-bottom: 15px;
+                }      
+                &.active,
+                &:hover{
+                    background: #ca0f1c;
+                    color: #fff !important;
+                    i{
+                        color: #fff !important;
+                    }
+                    .top{
+                        color: #fff !important;
+                    }
+                }            
+            }
+        }
+    }
+    .section2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            width: 100%;
+            height: 138px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .banner{
+                @include bg-full('swhz_title2.png');
+                width: 212px;
+                height: 62px;
+            }
+        }
+        .content{
+            margin: 0 auto;
+            width: 1060px;
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 34px;
+            .item{
+                height: 329px;
+                width: 341px;
+                margin-bottom: 20px;
+                background: #fff;
+                box-sizing: border-box;
+                border: 1px solid #e9e9e9;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px;
+                .foto{
+                    width: 317px;
+                    height: 189px;
+                    @include bg-full('t1.jpg');
+                    margin-bottom: 12px;
+                }
+                .name {
+                    font-size: 16px;
+                    color: rgb(0, 0, 0);
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                    align-self: flex-start;
+                }
+                p{
+                    font-size: 12px;
+                    color: rgb(153, 153, 153);
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+                .btn{
+                    font-size: 14px;
+                    color: rgb(213, 66, 76);
+                    align-self: flex-end;
+                }
+            }
+        }
+        .btnf{
+            @include flex-c;
+            margin-bottom: 41px;
+            height: 37.5px;
+            width: 160px;
+            border-radius: 18.5px;
+            background: #ff0d1e;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,180 @@
+.main .lunbo {
+  width: 100%;
+  height: 390px;
+  background: url("../img/liucheng_banner.jpg") no-repeat 0 0/100% 100%; }
+.main .section {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center; }
+  .main .section .title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 18px; }
+    .main .section .title .content {
+      background: url("../img/paimai_title.png") no-repeat 0 0/100% 100%;
+      width: 370px;
+      height: 62px; }
+  .main .section table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #e9e9e9;
+    font-size: 12px;
+    color: #333333; }
+    .main .section table tr {
+      height: 30px; }
+      .main .section table tr th {
+        background: #e9e9e9;
+        border: 1px solid #e9e9e9; }
+      .main .section table tr td {
+        text-align: center;
+        border: 1px solid #e9e9e9; }
+  .main .section .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    height: 37.5px;
+    width: 160px;
+    border-radius: 18.5px;
+    background: #ff0d1e;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+.main .belt {
+  height: 444px;
+  width: 100%;
+  background: url("../img/paimai_banner.png") no-repeat 0 0/100% 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; }
+  .main .belt .liucheng {
+    background: url("../img/liucheng_bg.png") no-repeat 0 0/100% 100%;
+    margin: 142px auto 0;
+    width: 1059px;
+    height: 257px;
+    position: relative; }
+    .main .belt .liucheng .item {
+      width: 179px;
+      height: 65px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      padding: 10px 18px; }
+      .main .belt .liucheng .item .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 16px; }
+      .main .belt .liucheng .item .info {
+        font-size: 12px;
+        margin-bottom: 6px;
+        text-align: center; }
+      .main .belt .liucheng .item:nth-of-type(1) {
+        position: absolute;
+        top: 0px;
+        left: 0px; }
+      .main .belt .liucheng .item:nth-of-type(2) {
+        position: absolute;
+        top: 0px;
+        left: 271px; }
+      .main .belt .liucheng .item:nth-of-type(3) {
+        position: absolute;
+        top: 0px;
+        left: 541px; }
+      .main .belt .liucheng .item:nth-of-type(4) {
+        position: absolute;
+        top: 83px;
+        right: 0px; }
+      .main .belt .liucheng .item:nth-of-type(5) {
+        position: absolute;
+        bottom: 0px;
+        left: 541px; }
+      .main .belt .liucheng .item:nth-of-type(6) {
+        position: absolute;
+        bottom: 0px;
+        left: 271px; }
+      .main .belt .liucheng .item:nth-of-type(7) {
+        position: absolute;
+        bottom: 0px;
+        left: 0px; }
+.main .section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1060px;
+  margin: 44px auto; }
+  .main .section2 .title {
+    background: url("../img/chengjiao_title.png") no-repeat 0 0/100% 100%;
+    width: 931px;
+    height: 65px;
+    margin-bottom: 62px; }
+  .main .section2 .infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; }
+    .main .section2 .infos .info {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 192px;
+      width: 516px;
+      color: #333333;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4); }
+      .main .section2 .infos .info .foto {
+        height: 100%;
+        width: 266px;
+        background: url("../img/p8.jpg") no-repeat 0 0/100% 100%; }
+      .main .section2 .infos .info .content {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 16px 20px; }
+        .main .section2 .infos .info .content .name {
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 20px; }
+        .main .section2 .infos .info .content p {
+          font-size: 14px;
+          text-transform: uppercase;
+          margin-bottom: 4px; }
+          .main .section2 .infos .info .content p span {
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: #fff; }
+            .main .section2 .infos .info .content p span.r {
+              background: #ff0d1e; }
+            .main .section2 .infos .info .content p span.g {
+              background: #5bba22; }
+            .main .section2 .infos .info .content p span.price {
+              font-size: 20px;
+              color: #ff0d1e;
+              font-weight: bold;
+              text-transform: uppercase; }
+  .main .section2 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    height: 37.5px;
+    width: 160px;
+    border-radius: 18.5px;
+    background: #ff0d1e;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=paimaihui.css.map */

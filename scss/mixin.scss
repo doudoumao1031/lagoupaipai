@@ -1,0 +1,29 @@
+@mixin bg-full($url){
+    background: url("../img/" + $url ) no-repeat 0 0/100% 100%;
+}
+
+@mixin p-a-tl($top, $left) {
+    position: absolute;
+    top:$top+px;
+    left:$left+px;
+}
+@mixin p-a-tr($top, $right) {
+    position: absolute;
+    top:$top+px;
+    right:$right+px;
+}
+@mixin p-a-bl($bottom, $left) {
+    position: absolute;
+    bottom: $bottom+px;
+    left:$left+px;
+}
+@mixin p-a-br($bottom, $right) {
+    position: absolute;
+    bottom: $bottom+px;
+    right:$right+px;
+}
+@mixin flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
