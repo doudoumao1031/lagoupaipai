@@ -1,0 +1,119 @@
+.main .section {
+  margin: 35px auto 37px;
+  width: 1060px;
+  height: 480px;
+  box-sizing: border-box;
+  border: 5px solid #c8c8c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 24px;
+  background: #fff; }
+  .main .section .title {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 18px; }
+    .main .section .title p {
+      font-size: 16px;
+      color: #231f1f;
+      font-weight: bold;
+      text-align: left; }
+  .main .section .jt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 44px; }
+    .main .section .jt .step {
+      width: 166px;
+      height: 45px;
+      color: #333333;
+      background: url("../img/zh_n.png") no-repeat 0 0/100% 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px; }
+      .main .section .jt .step.active {
+        background: url("../img/zh_y.png") no-repeat 0 0/100% 100%;
+        color: #ffffff; }
+  .main .section .banner {
+    height: 150px;
+    width: 405px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main .section .banner i {
+      color: #5cb253;
+      font-size: 60px;
+      margin-right: 10px; }
+    .main .section .banner p {
+      font-size: 14px;
+      color: #333333; }
+  .main .section .line {
+    width: 405px;
+    height: 42px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main .section .line .name {
+      width: 85px;
+      height: 100%;
+      font-size: 14px;
+      color: #333333;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+    .main .section .line input {
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid #dddddd;
+      padding: 0 16px;
+      border-radius: 2px; }
+      .main .section .line input.yzm {
+        width: 252px; }
+      .main .section .line input.phone {
+        width: 285px; }
+      .main .section .line input.czmm {
+        width: 310px; }
+    .main .section .line select {
+      width: 109px;
+      height: 100%;
+      border: 1px solid #dddddd;
+      padding: 0 16px;
+      border-radius: 2px; }
+    .main .section .line button {
+      width: 143px;
+      height: 100%;
+      background: #cc9c9f;
+      color: #fff;
+      border-radius: 2px;
+      font-size: 14px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .main .section .line img {
+      width: 143px;
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid #dddddd;
+      border-radius: 2px; }
+  .main .section .confirm {
+    width: 217px;
+    height: 42px;
+    border-radius: 2px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ca0f1c;
+    font-size: 16px;
+    margin-top: 35px; }
+
+/*# sourceMappingURL=zhaohuimima.css.map */

@@ -4,7 +4,7 @@
     .lunbo{
         height: 369px;
         width: 100%;
-        @include bg-full('swhz_banner.jpg');
+        @include bg-fullc('swhz_banner.jpg');
     }
     .section1{
         .title{
@@ -53,6 +53,7 @@
                 }      
                 &.active,
                 &:hover{
+                    cursor: pointer;
                     background: #ca0f1c;
                     color: #fff !important;
                     i{
@@ -125,6 +126,9 @@
                     font-size: 14px;
                     color: rgb(213, 66, 76);
                     align-self: flex-end;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -138,6 +142,11 @@
             font-size: 14px;
             color: rgb(255, 255, 255);
             text-transform: uppercase;
+            @include btnh;
+            // &:hover{
+            //     cursor: pointer;
+            //     background: rgba(255,13,30,.8);
+            // }
         }
     }
 }

@@ -16,6 +16,10 @@ body {
 i {
   font-style: normal; }
 
+a {
+  color: #999999;
+  text-decoration: none; }
+
 button {
   background: none;
   border: none;

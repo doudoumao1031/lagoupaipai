@@ -1,0 +1,99 @@
+.main {
+  margin: 0 auto;
+  width: 1060px;
+  position: relative;
+  padding-top: 51px; }
+  .main .belt {
+    box-sizing: border-box;
+    margin: 0 0 103px;
+    height: 446px;
+    width: 100%;
+    background: url("../img/login_bg.jpg") no-repeat 0 0/100% 100%; }
+  .main .form {
+    width: 409px;
+    box-sizing: border-box;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 125px;
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .main .form.zhuce {
+      top: 35px;
+      height: 530px; }
+    .main .form.denglu {
+      top: 88px;
+      height: 370px; }
+    .main .form .title {
+      width: 100%;
+      height: 35px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #eeeeee;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+    .main .form .line {
+      width: 100%;
+      height: 42px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main .form .line input {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+        border-radius: 2px;
+        background: #eeeeee;
+        font-size: 14px;
+        padding: 0 15px; }
+        .main .form .line input.yzm {
+          width: 196px;
+          align-self: flex-start; }
+      .main .form .line .btn {
+        width: 153px;
+        height: 100%;
+        border-radius: 2px;
+        background: #6da2da;
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main .form .line .btn:hover {
+          cursor: pointer; }
+      .main .form .line img {
+        width: 153px;
+        height: 100%;
+        border-radius: 2px;
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+        border-radius: 2px; }
+    .main .form .confirm {
+      width: 100%;
+      height: 42px;
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ca0f1c;
+      font-size: 16px;
+      color: #fff;
+      margin: 20px 0; }
+    .main .form .info {
+      align-self: flex-end;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: #999999; }
+      .main .form .info a {
+        color: #999999;
+        font-style: none; }
+      .main .form .info a:hover {
+        color: #f0313e;
+        text-decoration: underline; }
+
+/*# sourceMappingURL=zhuce.css.map */

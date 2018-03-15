@@ -2,6 +2,10 @@
     background: url("../img/" + $url ) no-repeat 0 0/100% 100%;
 }
 
+@mixin bg-fullc($url){
+    background: url("../img/" + $url ) no-repeat center center;
+}
+
 @mixin p-a-tl($top, $left) {
     position: absolute;
     top:$top+px;
@@ -26,4 +30,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin btnh{
+    &:hover{
+        cursor: pointer;
+        background: rgba(255,13,30,.8);
+    }
 }

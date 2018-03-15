@@ -1,0 +1,137 @@
+@import "./mixin.scss";
+
+.main{
+    .section{
+        margin: 35px auto 37px;
+        width: 1060px;
+        height: 480px;
+        box-sizing: border-box;
+        border: 5px solid #c8c8c8;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 24px;
+        background: #fff;
+        .title{
+            height: 48px;
+            width: 100%;
+            box-sizing: border-box;
+            border-bottom: 1px solid #eeeeee;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 18px;
+            p {
+                font-size: 16px;
+                color: rgb(35, 31, 31);
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+        .jt{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 44px;
+            .step{
+                width: 166px;
+                height: 45px;
+                color: #333333;
+                @include bg-full('zh_n.png');
+                @include flex-c;
+                font-size: 14px;
+                &.active{
+                    @include bg-full('zh_y.png');
+                    color: #ffffff;
+                }
+            }
+        }
+        .banner{
+            height: 150px;
+            width: 405px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: #5cb253;
+                font-size: 60px;
+                margin-right: 10px;
+            }
+            p {
+                font-size: 14px;
+                color: rgb(51, 51, 51);
+            }
+              
+        }
+        .line{
+            width: 405px;
+            height: 42px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .name {
+                width: 85px;
+                height: 100%;
+                font-size: 14px;
+                color: rgb(51, 51, 51);
+                // text-align: right;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            input{
+                height: 100%;
+                box-sizing: border-box;
+                border: 1px solid #dddddd;
+                padding: 0 16px;
+                border-radius: 2px;
+                &.yzm{
+                    width: 252px;
+                }
+                &.phone{
+                    width: 285px;
+                }
+                // 重置密码
+                &.czmm{
+                    width: 310px;
+                }
+            }
+            select{
+                width: 109px;
+                height: 100%;
+                border: 1px solid #dddddd;
+                padding: 0 16px;
+                border-radius: 2px;
+            }
+            button{
+                width: 143px;
+                height: 100%;
+                background: #cc9c9f;
+                color: #fff;
+                border-radius: 2px;
+                font-size: 14px;
+                text-transform: uppercase;
+                @include flex-c;
+            }
+            img{
+                width: 143px;
+                height: 100%;
+                box-sizing: border-box;
+                border: 1px solid #dddddd;
+                border-radius: 2px;
+            }
+        }
+        .confirm{
+            width: 217px;
+            height: 42px;
+            border-radius: 2px;
+            color: #fff;
+            @include flex-c;
+            background: #ca0f1c;
+            font-size: 16px;
+            margin-top: 35px;
+        }
+    }
+}

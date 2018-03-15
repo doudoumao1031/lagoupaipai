@@ -4,7 +4,8 @@
     .lunbo{
         height: 369px;
         width: 100%;
-        @include bg-full('bxwt_banner_02.jpg');
+        // min-width: 1060px;
+        @include bg-fullc('bxwt_banner_02.jpg');
     }
     .section1{
         .title{
@@ -53,6 +54,7 @@
                 }      
                 &.active,
                 &:hover{
+                    cursor: pointer;
                     background: #ca0f1c;
                     color: #fff !important;
                     i{
@@ -95,6 +97,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-grow: 1;
                 .banner{
                     width: 80%;
                     height: 80%;
