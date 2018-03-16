@@ -73,7 +73,31 @@ body {
 
 .main .lunbo {
   height: 593px;
-  background: url("../img/banner.jpg") no-repeat center center; }
+  position: relative; }
+  .main .lunbo .cont {
+    width: 100%;
+    height: 100%; }
+    .main .lunbo .cont .img {
+      width: 100%;
+      height: 100%;
+      background: url("../img/banner.jpg") no-repeat center center; }
+  .main .lunbo .btns1 {
+    z-index: 10;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main .lunbo .btns1 .btn {
+      background: rgba(255, 255, 255, 0.5);
+      margin: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%; }
+      .main .lunbo .btns1 .btn.active, .main .lunbo .btns1 .btn:hover {
+        cursor: pointer;
+        background: #fff; }
 .main .section1 {
   width: 1060px;
   margin: 40px auto;
@@ -117,8 +141,7 @@ body {
           align-self: flex-end; }
         .main .section1 .content .infos .info .foto {
           width: 220px;
-          height: 172px;
-          background: url("../img/p1.jpg") no-repeat 0 0/100% 100%; }
+          height: 172px; }
         .main .section1 .content .infos .info .content {
           width: 220px;
           font-size: 14px;
@@ -279,26 +302,39 @@ body {
         .main .belt .cont .content .btn.r {
           background: url("../img/tj_right.png") no-repeat 0 0/100% 100%; }
       .main .belt .cont .content .item {
+        position: relative;
         width: 133px;
         height: 135px;
-        color: white;
-        background: url("../img/p4.jpg") no-repeat 0 0/100% 100%; }
+        color: white; }
+        .main .belt .cont .content .item img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 0; }
         .main .belt .cont .content .item .cont {
+          position: absolute;
+          top: 0;
+          left: 0;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           width: 100%;
           height: 100%;
-          background: rgba(0, 0, 0, 0.5); }
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 5; }
           .main .belt .cont .content .item .cont:hover {
             cursor: pointer;
             background: rgba(0, 0, 0, 0.2); }
           .main .belt .cont .content .item .cont .name {
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            z-index: 1; }
           .main .belt .cont .content .item .cont .price {
+            z-index: 1;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -345,8 +381,7 @@ body {
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4); }
       .main .section2 .infos .info .foto {
         height: 100%;
-        width: 266px;
-        background: url("../img/p8.jpg") no-repeat 0 0/100% 100%; }
+        width: 266px; }
       .main .section2 .infos .info .content {
         box-sizing: border-box;
         height: 100%;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/newscenter_detail.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -42,13 +43,49 @@
     <div class="main">
         <div class="sidebar">
             <div class="title"></div>
-            <div class="item">
-                <div class="name">公司简介</div>
-                <span class="iconfont icon-jiantouyou"></span>
+            <div class="flip active cont">
+                <div class="item active">
+                    <div class="name">公司简介</div>
+                    <span class="iconfont icon-jiantouyou"></span>
+                </div>
+                <div class="panel">
+                    <div class="element active">优惠活动优惠活动</div>
+                    <div class="element">公司动态</div>
+                    <div class="element">联系我们</div>
+                </div>
             </div>
-            <div class="item">
-                <div class="name">公司新闻</div>
-                <span class="iconfont icon-jiantouyou"></span>
+            <div class="flip cont">
+                <div class="item">
+                    <div class="name">公司新闻</div>
+                    <span class="iconfont icon-jiantouyou"></span>
+                </div>
+                <div class="panel">
+                    <div class="element active">优惠活动优惠活动</div>
+                    <div class="element">公司动态</div>
+                    <div class="element">联系我们</div>
+                </div>
+            </div>
+            <div class="flip cont">
+                <div class="item">
+                    <div class="name">公司新闻</div>
+                    <span class="iconfont icon-jiantouyou"></span>
+                </div>
+                <div class="panel">
+                    <div class="element active">优惠活动优惠活动</div>
+                    <div class="element">公司动态</div>
+                    <div class="element">联系我们</div>
+                </div>
+            </div>
+            <div class="flip cont">
+                <div class="item">
+                    <div class="name">公司新闻</div>
+                    <span class="iconfont icon-jiantouyou"></span>
+                </div>
+                <div class="panel">
+                    <div class="element active">优惠活动优惠活动</div>
+                    <div class="element">公司动态</div>
+                    <div class="element">联系我们</div>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -119,4 +156,15 @@
         </div>
     </div>
 </body>
+<script>
+    $(document).ready(function(){
+        $(".flip").click(function(e){
+            $(this).children('.item').addClass('active');
+            $(this).children('.panel').slideDown("slow");
+            $(this).siblings().children('.item').removeClass('active');
+            $(this).siblings().children('.panel').slideUp("slow");
+            // $(".panel").slideToggle("slow");
+        });
+    });
+</script>
 </html>

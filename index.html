@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/cycle.js"></script>
 </head>
 <body>
     <div class="header">
@@ -27,35 +29,52 @@
         </div>
         <div class="tabbar">
             <div class="cont">
-                <a class="item active">首页</a>
-                <a class="item">拍卖会</a>
-                <a class="item">会员服务</a>
-                <a class="item">保险公司委托服务</a>
-                <a class="item">商务合作</a>
-                <a class="item">新闻中心</a>
-                <a class="item">相关问题</a>
-                <a class="item">联系我们</a>
+                <a href="index.html" class="item active">首页</a>
+                <a href="paimaihui.html" class="item">拍卖会</a>
+                <a href="huiyuanfuwu.html" class="item">会员服务</a>
+                <a href="baoxiangongsi.html" class="item">保险公司委托服务</a>
+                <a href="shangwuhezuo.html" class="item">商务合作</a>
+                <a href="newscenter.html" class="item">新闻中心</a>
+                <a href="xiangguanwenti.html" class="item">相关问题</a>
+                <a href="lianxiwomen.html" class="item">联系我们</a>
             </div>
         </div>
     </div>
     <div class="main">
-        <div class="lunbo"></div>
+        <div class="lunbo">
+            <div id="lunbo" class="cont">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <!-- <div class="btns1">
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div> -->
+        </div>
         <div class="section1">
             <div class="content">
                 <div class="title"></div>
                 <div class="infos">
                     <div class="info">
-                        <div class="foto"></div>
+                        <!-- <div class="foto"></div> -->
+                        <img src="img/p1.jpg" alt="" class="foto">
                         <div class="content">人保财险贵州分公司旧机动车专场拍卖会拍卖公告</div>
                         <div class="date">2018/01/31</div>
                     </div>
                     <div class="info">
-                        <div class="foto"></div>
+                        <!-- <div class="foto"></div> -->
+                        <img src="img/p1.jpg" alt="" class="foto">
                         <div class="content">人保财险贵州分公司旧机动车专场拍卖会拍卖公告</div>
                         <div class="date">2018/01/31</div>
                     </div>
                     <div class="info">
-                        <div class="foto"></div>
+                        <!-- <div class="foto"></div> -->
+                        <img src="img/p1.jpg" alt="" class="foto">
                         <div class="content">人保财险贵州分公司旧机动车专场拍卖会拍卖公告</div>
                         <div class="date">2018/01/31</div>
                     </div>
@@ -113,29 +132,34 @@
                 <div class="content">
                     <div class="btn l"></div>
                     <div class="item">
+                        <img src="img/p4.jpg" class="cont" alt="">
                         <div class="cont">
                             <div class="name">福特</div>
                             <div class="price"><span>起拍价</span>￥6000</div>
                         </div>
                     </div>
                     <div class="item">
+                        <img src="img/p4.jpg" class="cont" alt="">
                         <div class="cont">
                             <div class="name">福特</div>
                             <div class="price"><span>起拍价</span>￥6000</div>
                         </div>
                     </div>
                     <div class="item">
+                        <img src="img/p4.jpg" class="cont" alt="">
                         <div class="cont">
                             <div class="name">福特</div>
                             <div class="price"><span>起拍价</span>￥6000</div>
                         </div>
                     </div>
                     <div class="item">
+                        <img src="img/p4.jpg" class="cont" alt="">
                         <div class="cont">
                             <div class="name">福特</div>
                             <div class="price"><span>起拍价</span>￥6000</div>
                         </div>
                     </div>
+                  
                    
                     <div class="btn r"></div>
                 </div>
@@ -145,7 +169,7 @@
             <div class="title"></div>
             <div class="infos">
                 <div class="info">
-                    <div class="foto"></div>
+                    <img src="img/p8.jpg" class="foto" alt="">
                     <div class="content">
                         <div class="name">2014款 本田 国5</div>
                         <p>编号: A1A021536 <span class="r">碰撞</span></p>
@@ -156,7 +180,7 @@
                     </div>
                 </div>
                 <div class="info">
-                    <div class="foto"></div>
+                    <img src="img/p8.jpg" class="foto" alt="">
                     <div class="content">
                         <div class="name">2014款 本田 国5</div>
                         <p>编号: A1A021536 <span class="r">碰撞</span></p>
@@ -167,7 +191,7 @@
                     </div>
                 </div>
                 <div class="info">
-                    <div class="foto"></div>
+                    <img src="img/p8.jpg" class="foto" alt="">
                     <div class="content">
                         <div class="name">2014款 本田 国5</div>
                         <p>编号: A1A021536 <span class="r">碰撞</span></p>
@@ -178,7 +202,7 @@
                     </div>
                 </div>
                 <div class="info">
-                    <div class="foto"></div>
+                    <img src="img/p8.jpg" class="foto" alt="">
                     <div class="content">
                         <div class="name">2014款 本田 国5</div>
                         <p>编号: A1A021536 <span class="r">碰撞</span></p>
@@ -245,5 +269,20 @@
             </div>
         </div>
     </div>
+    <script>
+        $('#lunbo').after($('<div class="btns1">'));
+        $('#lunbo').cycle({
+            // fx: 'scrollRight',
+            // fx: 'scrollLeft',
+            // speed: 500,
+            timeout: 2000,
+            activePagerClass: 'active',
+            pager: '.btns1',
+            pagerEvent: 'click',
+            pagerAnchorBuilder: function(idx, slide){
+                return '<div class="btn"></div>';
+            }
+        });
+    </script>
 </body>
 </html>

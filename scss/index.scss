@@ -97,7 +97,37 @@ body{
 .main{
     .lunbo{
         height: 593px;
-        @include bg-fullc('banner.jpg');
+        position: relative;
+        .cont{
+            width: 100%;
+            height: 100%;
+            .img{
+                width: 100%;
+                height: 100%;
+                @include bg-fullc('banner.jpg');
+            }
+        }
+        .btns1{
+            z-index: 10;
+            position: absolute;
+            bottom:15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn{
+                background: rgba(255,255,255,.5);
+                margin: 5px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                &.active,
+                &:hover{
+                    cursor: pointer;
+                    background: #fff;
+                }
+            }
+        }
     }
     .section1{
         width: 1060px;
@@ -150,7 +180,7 @@ body{
                     .foto{
                         width: 220px;
                         height: 172px;
-                        @include bg-full('p1.jpg');
+                        // @include bg-full('p1.jpg');
                     }
                     .content {
                         width: 220px;
@@ -342,12 +372,23 @@ body{
                     }
                 }
                 .item{
-                    
+                    position: relative;
                     width: 133px;
                     height: 135px;
                     color: rgb(255, 255, 255);
-                    @include bg-full('p4.jpg');
+                    // @include bg-full('p4.jpg');
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 0;
+                    }
                     .cont{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -355,6 +396,7 @@ body{
                         width: 100%;
                         height: 100%;
                         background: rgba(0,0,0,.5);
+                        z-index: 5;
                         &:hover{
                             cursor: pointer;
                             background: rgba(0,0,0,.2);
@@ -363,8 +405,10 @@ body{
                             font-size: 18px;
                             font-weight: bold;
                             margin-bottom: 5px;
+                            z-index: 1;
                         }
                         .price{
+                            z-index: 1;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -419,7 +463,7 @@ body{
                 .foto{
                     height: 100%;
                     width: 266px;
-                    @include bg-full('p8.jpg');
+                    // @include bg-full('p8.jpg');
                 }
                 .content{
                     box-sizing: border-box;

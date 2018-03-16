@@ -148,8 +148,7 @@
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4); }
       .main .section2 .infos .info .foto {
         height: 100%;
-        width: 266px;
-        background: url("../img/p8.jpg") no-repeat 0 0/100% 100%; }
+        width: 266px; }
       .main .section2 .infos .info .content {
         box-sizing: border-box;
         height: 100%;

@@ -33,11 +33,12 @@
         }
     }
     .map{
+        display: block;
         margin: 0 auto;
         width: 1060px;
         height: 377px;
         margin-bottom: 63px;
         box-sizing: border-box;
-        @include bg-full('map.jpg');
+        // @include bg-full('map.jpg');
     }
 }

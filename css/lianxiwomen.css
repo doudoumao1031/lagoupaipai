@@ -26,11 +26,11 @@
       .main .section .item .logo i {
         font-size: 55px; }
 .main .map {
+  display: block;
   margin: 0 auto;
   width: 1060px;
   height: 377px;
   margin-bottom: 63px;
-  box-sizing: border-box;
-  background: url("../img/map.jpg") no-repeat 0 0/100% 100%; }
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=lianxiwomen.css.map */

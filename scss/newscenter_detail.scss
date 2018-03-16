@@ -22,36 +22,63 @@ body{
             height: 91px;
             @include bg-full('newscenter_title.png');
         }
-        .item{
-            border-top: 1px solid #fafafa;
-            height: 60px;
-            width: 100%;
-            background: #dddddd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .name {
-                font-size: 14px;
-                color: rgb(51, 51, 51);
-                text-align: center;
-                margin-left: 32px;
+        .flip{
+            &.active{
+                .panel{
+                    display: block;
+                }
             }
-            span{
-                font-size: 34px;
-                color: #c7c7c7;
-                margin-right: 12px;
-            }
-            &.active,
-            &:hover{
-                background: #a1a1a1;
-                cursor: pointer;
-                .name{
-                    color: #fff;
+            .item{
+                border-top: 1px solid #fafafa;
+                height: 60px;
+                width: 100%;
+                background: #dddddd;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .name {
+                    font-size: 14px;
+                    color: rgb(51, 51, 51);
+                    text-align: center;
+                    margin-left: 32px;
                 }
                 span{
-                    color: #fff;
+                    font-size: 34px;
+                    color: #c7c7c7;
+                    margin-right: 12px;
+                }
+                &.active,
+                &:hover{
+                    background: #a1a1a1;
+                    cursor: pointer;
+                    .name{
+                        color: #fff;
+                    }
+                    span{
+                        color: #fff;
+                    }
                 }
             }
+            .panel{
+                display: none;
+                .element{
+                    height: 40px;
+                    width: 100%;
+                    background:#f8f8f8;
+                    // @include flex-c;
+                    padding-left: 50px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 14px;
+                    &.active,
+                    &:hover{
+                        color: #e72331;
+                        cursor: pointer;
+                    }
+                }
+            }
+
         }
     }
     .content{
