@@ -1,0 +1,222 @@
+.main .section {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1060px;
+  margin: 0 auto; }
+  .main .section .sidebar {
+    width: 148px; }
+    .main .section .sidebar .cell .item {
+      width: 100%;
+      height: 34px;
+      font-size: 14px;
+      color: #666666;
+      padding-left: 34px; }
+      .main .section .sidebar .cell .item:hover, .main .section .sidebar .cell .item.active {
+        color: #ca0f1c;
+        cursor: pointer; }
+      .main .section .sidebar .cell .item.title {
+        position: relative;
+        font-size: 14px;
+        color: #333333;
+        font-weight: bold; }
+        .main .section .sidebar .cell .item.title i {
+          position: absolute;
+          left: 4px;
+          top: -2px;
+          font-size: 24px;
+          float: left; }
+  .main .section .content {
+    width: 874px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 0 14px;
+    margin-bottom: 50px; }
+    .main .section .content .cell {
+      width: 100%; }
+      .main .section .content .cell .zhifu {
+        box-sizing: border-box;
+        border: 1px solid #e9e9e9;
+        margin-bottom: 45px; }
+        .main .section .content .cell .zhifu .cards1 {
+          margin: 15px 0 30px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main .section .content .cell .zhifu .cards1 .card {
+            box-sizing: border-box;
+            border: 1px solid #d0d0d0;
+            width: 146px;
+            height: 52px;
+            margin: 5px; }
+            .main .section .content .cell .zhifu .cards1 .card.active, .main .section .content .cell .zhifu .cards1 .card:hover {
+              border-color: #ca0f1c;
+              cursor: pointer; }
+        .main .section .content .cell .zhifu .cards2 {
+          margin: 15px 0 30px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main .section .content .cell .zhifu .cards2 .card {
+            box-sizing: border-box;
+            border: 1px solid #e9e9e9;
+            width: 340px;
+            height: 148px;
+            border-radius: 10px;
+            margin: 0 10px;
+            overflow: hidden; }
+            .main .section .content .cell .zhifu .cards2 .card .header {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding-left: 12px;
+              font-size: 16px;
+              color: white;
+              font-weight: bold;
+              margin-bottom: 0; }
+              .main .section .content .cell .zhifu .cards2 .card .header.gongshang {
+                background: linear-gradient(to right, #e12971, #fe5133); }
+              .main .section .content .cell .zhifu .cards2 .card .header.jianshe {
+                background: linear-gradient(to right, #0558ff, #3898fc); }
+            .main .section .content .cell .zhifu .cards2 .card .info {
+              padding: 12px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start; }
+              .main .section .content .cell .zhifu .cards2 .card .info p {
+                font-size: 14px;
+                color: #666666;
+                margin-bottom: 4px; }
+                .main .section .content .cell .zhifu .cards2 .card .info p span {
+                  font-size: 14px;
+                  color: #333333; }
+        .main .section .content .cell .zhifu .form .line {
+          display: flex;
+          justify-content: center;
+          align-content: center; }
+          .main .section .content .cell .zhifu .form .line .title {
+            width: 100px; }
+            .main .section .content .cell .zhifu .form .line .title i {
+              color: #ff4c73; }
+          .main .section .content .cell .zhifu .form .line input {
+            width: 340px;
+            height: 42px;
+            box-sizing: border-box;
+            border: 1px solid #e9e9e9;
+            padding-left: 10px;
+            font-size: 14px;
+            color: #999999; }
+        .main .section .content .cell .zhifu .form button {
+          margin: 15px auto 22px;
+          width: 140px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #ca0f1c;
+          color: #fff;
+          border-radius: 3px;
+          font-size: 16px; }
+      .main .section .content .cell .tixian {
+        box-sizing: border-box;
+        margin-bottom: 45px; }
+        .main .section .content .cell .tixian .form .line {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center; }
+          .main .section .content .cell .tixian .form .line label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 14px; }
+            .main .section .content .cell .tixian .form .line label .radio {
+              width: 14px;
+              height: 14px;
+              margin-right: 12px; }
+          .main .section .content .cell .tixian .form .line .title {
+            width: 180px;
+            padding-right: 10px;
+            text-align: right; }
+            .main .section .content .cell .tixian .form .line .title i {
+              color: #ff4c73; }
+          .main .section .content .cell .tixian .form .line input {
+            width: 340px;
+            height: 42px;
+            box-sizing: border-box;
+            border: 1px solid #e9e9e9;
+            padding-left: 10px;
+            font-size: 14px;
+            color: #999999; }
+        .main .section .content .cell .tixian .form button {
+          margin: 15px auto 22px;
+          width: 140px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #ca0f1c;
+          color: #fff;
+          border-radius: 3px;
+          font-size: 16px; }
+      .main .section .content .cell .header {
+        height: 58px;
+        box-sizing: border-box;
+        border-bottom: 1px dotted #d5d5d5;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 15px;
+        color: #333333;
+        font-weight: bold;
+        margin-bottom: 14px; }
+        .main .section .content .cell .header i {
+          width: 4px;
+          height: 15px;
+          margin-right: 8px;
+          background: #ca0f1c; }
+      .main .section .content .cell .line {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 14px; }
+        .main .section .content .cell .line .item {
+          width: 260px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          align-content: center; }
+          .main .section .content .cell .line .item .title {
+            width: 92px;
+            margin-left: 28px;
+            margin-right: 12px;
+            font-size: 14px;
+            color: #999999; }
+          .main .section .content .cell .line .item .value {
+            font-size: 14px;
+            color: #333333; }
+            .main .section .content .cell .line .item .value.r {
+              color: #ca0f1c; }
+            .main .section .content .cell .line .item .value img {
+              width: 67px;
+              height: 49px; }
+      .main .section .content .cell table {
+        width: 100%;
+        border: 1px solid #e9e9e9;
+        margin-bottom: 35px;
+        border-collapse: collapse; }
+        .main .section .content .cell table.lishijilu tr td {
+          width: 25%; }
+        .main .section .content .cell table tr {
+          height: 33px; }
+          .main .section .content .cell table tr th {
+            background: #e9e9e9; }
+          .main .section .content .cell table tr td {
+            text-align: center;
+            border: 1px solid #e9e9e9; }
+
+/*# sourceMappingURL=gerenzhongxin.css.map */

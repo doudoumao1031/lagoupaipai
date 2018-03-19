@@ -1,0 +1,280 @@
+@import "./mixin.scss";
+.main{
+    .section{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1060px;
+        margin: 0 auto;
+        .sidebar{
+            width: 148px;
+            .cell{
+                .item{
+                    width: 100%;
+                    height: 34px;
+                    font-size: 14px;
+                    color: rgb(102, 102, 102);
+                    padding-left: 34px;
+                    &:hover,
+                    &.active{
+                        color: #ca0f1c;
+                        cursor: pointer;
+                    }
+                    &.title{
+                        position: relative;
+                        font-size: 14px;
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                        i{
+                            position: absolute;
+                            left: 4px;
+                            top: -2px;
+                            font-size: 24px;                            
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            width: 874px;
+            border: 1px solid #e9e9e9;
+            box-sizing: border-box;
+            background: #fff;
+            padding: 0 14px;
+            margin-bottom: 50px;
+            .cell{
+                width: 100%;
+                .zhifu{
+                    box-sizing: border-box;
+                    border: 1px solid $gray;
+                    margin-bottom: 45px;
+                    .cards1{
+                        margin: 15px 0 30px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .card{
+                            box-sizing: border-box;
+                            border: 1px solid #d0d0d0;
+                            width: 146px;
+                            height: 52px;
+                            margin: 5px;
+                            &.active,
+                            &:hover{
+                                border-color: $red;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .cards2{
+                        margin: 15px 0 30px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .card{
+                            box-sizing: border-box;
+                            border: 1px solid #e9e9e9;
+                            width: 340px;
+                            height: 148px;
+                            border-radius: 10px;
+                            margin: 0 10px;
+                            overflow: hidden;
+                            .header{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                padding-left: 12px;
+                                font-size: 16px;
+                                color: rgb(255, 255, 255);
+                                font-weight: bold;
+                                margin-bottom: 0;
+                                &.gongshang{
+                                    background: linear-gradient(to right, #e12971, #fe5133);
+                                }
+                                &.jianshe{
+                                    background: linear-gradient(to right, #0558ff, #3898fc);
+                                }
+                            }
+                            .info{
+                                padding: 12px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                p{
+                                    font-size: 14px;
+                                    color: rgb(102, 102, 102);
+                                    margin-bottom: 4px;
+                                    span{
+                                        font-size: 14px;
+                                        color: rgb(51, 51, 51);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .form{
+                        .line{
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            .title{
+                                width: 100px;
+                                i{
+                                    color: #ff4c73;
+                                }
+                            }
+                            input{
+                                width: 340px;
+                                height: 42px;
+                                box-sizing: border-box;
+                                border: 1px solid $gray;
+                                padding-left: 10px;
+                                font-size: 14px;
+                                color: rgb(153, 153, 153);
+                            }
+                        }
+                        button{
+                            margin: 15px auto 22px;
+                            width: 140px;
+                            height: 48px;
+                            @include flex-c;
+                            background: #ca0f1c;
+                            color: #fff;
+                            border-radius: 3px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .tixian{
+                    box-sizing: border-box;
+                    // border: 1px solid $gray;
+                    margin-bottom: 45px;
+                    .form{
+                        .line{
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            align-items: center;
+                            label{
+                                @include flex-c;
+                                margin: 0 14px;
+                                .radio{
+                                    width: 14px;
+                                    height: 14px;
+                                    margin-right: 12px;
+                                }
+                            }
+                            .title{
+                                width: 180px;
+                                padding-right: 10px;
+                                text-align: right;
+                                i{
+                                    color: #ff4c73;
+                                }
+                            }
+                            input{
+                                width: 340px;
+                                height: 42px;
+                                box-sizing: border-box;
+                                border: 1px solid $gray;
+                                padding-left: 10px;
+                                font-size: 14px;
+                                color: rgb(153, 153, 153);
+                            }
+                        }
+                        button{
+                            margin: 15px auto 22px;
+                            width: 140px;
+                            height: 48px;
+                            @include flex-c;
+                            background: #ca0f1c;
+                            color: #fff;
+                            border-radius: 3px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .header{
+                    height: 58px;
+                    box-sizing: border-box;
+                    border-bottom: 1px dotted #d5d5d5;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 15px;
+                    color: rgb(51, 51, 51);
+                    font-weight: bold;
+                    margin-bottom: 14px;
+                    i{
+                        width: 4px;
+                        height: 15px;
+                        margin-right: 8px;
+                        background: $red;
+                    }
+                }
+                .line{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    align-content: center;
+                    margin-bottom: 14px;
+                    .item{
+                        // height: 30px;
+                        width: 260px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        align-content: center;
+                        .title{
+                            width: 92px;
+                            margin-left: 28px;
+                            margin-right: 12px;
+                            font-size: 14px;
+                            color: rgb(153, 153, 153);
+                        }
+                        .value{
+                            &.r{
+                                color: $red;
+                            }
+                            font-size: 14px;
+                            color: rgb(51, 51, 51);
+                            img{
+                                width: 67px;
+                                height: 49px;
+                            }
+                        }
+                    }
+                }
+                table{
+                    width: 100%;
+                    border: 1px solid $gray;
+                    margin-bottom: 35px;
+                    border-collapse:collapse;
+                    &.lishijilu{
+                        tr{
+                            td{
+                                width: 25%;
+                            }
+                        }
+                    }
+                    tr{
+                        height: 33px;
+                        th{
+                            background: #e9e9e9;
+                            // max-width: 200px;
+                        }
+                        td{
+                            text-align: center;
+                            // max-width: 0px;
+                            // width: 25%;
+                            border: 1px solid $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
