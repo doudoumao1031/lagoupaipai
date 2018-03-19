@@ -143,6 +143,10 @@ body{
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
+                        &:hover{
+                            cursor: pointer;
+                            color: $red;
+                        }
                         i{
                             width: 8px;
                             height: 8px;
@@ -177,7 +181,7 @@ body{
                     color: #999999;
                     margin: 3.5px;
                     &:hover,
-                    &:active{
+                    &.active{
                         background: #ca0f1c;
                         color: #fff;
                         cursor: pointer;

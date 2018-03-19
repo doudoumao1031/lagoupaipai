@@ -45,14 +45,14 @@
           display: flex;
           justify-content: center;
           align-items: center; }
-          .main .section .content .cell .zhifu .cards1 .card {
+          .main .section .content .cell .zhifu .cards1 .cont {
             box-sizing: border-box;
             border: 1px solid #d0d0d0;
             width: 146px;
             height: 52px;
             margin: 5px; }
-            .main .section .content .cell .zhifu .cards1 .card.active, .main .section .content .cell .zhifu .cards1 .card:hover {
-              border-color: #ca0f1c;
+            .main .section .content .cell .zhifu .cards1 .cont.active, .main .section .content .cell .zhifu .cards1 .cont:hover {
+              background: url("../img/sjx.png") no-repeat 0 0/100% 100%;
               cursor: pointer; }
         .main .section .content .cell .zhifu .cards2 {
           margin: 15px 0 30px 0;
@@ -75,7 +75,8 @@
               font-size: 16px;
               color: white;
               font-weight: bold;
-              margin-bottom: 0; }
+              margin-bottom: 0;
+              border: none; }
               .main .section .content .cell .zhifu .cards2 .card .header.gongshang {
                 background: linear-gradient(to right, #e12971, #fe5133); }
               .main .section .content .cell .zhifu .cards2 .card .header.jianshe {
@@ -93,6 +94,27 @@
                 .main .section .content .cell .zhifu .cards2 .card .info p span {
                   font-size: 14px;
                   color: #333333; }
+          .main .section .content .cell .zhifu .cards2 .ewm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #999999; }
+            .main .section .content .cell .zhifu .cards2 .ewm .cont {
+              width: 150px;
+              height: 150px;
+              box-sizing: border-box;
+              border: 1px solid #e9e9e9;
+              font-size: 14px;
+              color: #999999;
+              margin-bottom: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .main .section .content .cell .zhifu .cards2 .ewm .cont img {
+                width: 136px;
+                height: 136px;
+                border: none; }
         .main .section .content .cell .zhifu .form .line {
           display: flex;
           justify-content: center;
@@ -125,7 +147,7 @@
         margin-bottom: 45px; }
         .main .section .content .cell .tixian .form .line {
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           align-content: center;
           align-items: center; }
           .main .section .content .cell .tixian .form .line label {
@@ -138,7 +160,7 @@
               height: 14px;
               margin-right: 12px; }
           .main .section .content .cell .tixian .form .line .title {
-            width: 180px;
+            width: 260px;
             padding-right: 10px;
             text-align: right; }
             .main .section .content .cell .tixian .form .line .title i {
@@ -150,9 +172,28 @@
             border: 1px solid #e9e9e9;
             padding-left: 10px;
             font-size: 14px;
-            color: #999999; }
+            color: #999999;
+            margin-right: 120px; }
+          .main .section .content .cell .tixian .form .line select {
+            width: 340px;
+            height: 42px;
+            box-sizing: border-box;
+            border: 1px solid #e9e9e9;
+            padding-left: 10px;
+            font-size: 14px;
+            color: #999999;
+            margin-right: 120px; }
+          .main .section .content .cell .tixian .form .line.center {
+            justify-content: center; }
+          .main .section .content .cell .tixian .form .line.khh label {
+            margin: 0; }
+            .main .section .content .cell .tixian .form .line.khh label input, .main .section .content .cell .tixian .form .line.khh label select {
+              width: 126px;
+              margin: 0; }
+            .main .section .content .cell .tixian .form .line.khh label span {
+              margin: 0 5px; }
         .main .section .content .cell .tixian .form button {
-          margin: 15px auto 22px;
+          margin: 20px auto 22px;
           width: 140px;
           height: 48px;
           display: flex;
@@ -162,6 +203,45 @@
           color: #fff;
           border-radius: 3px;
           font-size: 16px; }
+      .main .section .content .cell .qianbao {
+        height: 98px;
+        background: #f2f2f2;
+        border: 1px dotted #e9e9e9;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main .section .content .cell .qianbao .item {
+          height: 54px;
+          flex-grow: 1;
+          border-right: 1px solid #e9e9e9;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main .section .content .cell .qianbao .item:last-of-type(1) {
+            border: none; }
+          .main .section .content .cell .qianbao .item.row {
+            flex-direction: row; }
+          .main .section .content .cell .qianbao .item.column {
+            flex-direction: column; }
+          .main .section .content .cell .qianbao .item .price {
+            font-size: 22px;
+            color: #999999; }
+            .main .section .content .cell .qianbao .item .price.r {
+              color: #ca0f1c; }
+          .main .section .content .cell .qianbao .item .title {
+            font-size: 14px;
+            color: #333333; }
+          .main .section .content .cell .qianbao .item button {
+            width: 65px;
+            height: 29px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            font-size: 14px;
+            color: white;
+            background: #ca0f1c;
+            margin: 5px; }
       .main .section .content .cell .header {
         height: 58px;
         box-sizing: border-box;
@@ -213,10 +293,19 @@
           width: 25%; }
         .main .section .content .cell table tr {
           height: 33px; }
+          .main .section .content .cell table tr:hover {
+            cursor: pointer;
+            background: rgba(233, 233, 233, 0.5); }
           .main .section .content .cell table tr th {
             background: #e9e9e9; }
           .main .section .content .cell table tr td {
             text-align: center;
             border: 1px solid #e9e9e9; }
+            .main .section .content .cell table tr td.b {
+              color: #167fd0; }
+            .main .section .content .cell table tr td.r {
+              color: #ca0f1c; }
+            .main .section .content .cell table tr td.g {
+              color: #12922a; }
 
 /*# sourceMappingURL=gerenzhongxin.css.map */

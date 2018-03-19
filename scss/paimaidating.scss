@@ -19,6 +19,14 @@
             &:nth-last-child(1){
                 margin-bottom: 0;
             }
+            &.spaceb{
+                justify-content: space-between;
+                .cont{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+            }
             .title{
                 text-align: right;
                 height: 100%;
@@ -43,6 +51,44 @@
                     background: #ca0f1c;
                     color: #fff;
                 }
+            }
+            .more{
+                width: 75px;
+                font-size: 12px;
+                color: rgb(153, 153, 153);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 15px;
+                &:hover{
+                    cursor: pointer;
+                    color: $red;
+                }
+            }
+            .wrap{
+                width: 80px;
+                height: 28px;
+                box-sizing: border-box;
+                border: 1px solid $gray;
+                font-size: 12px;
+                color: rgb(51, 51, 51);
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 5px;
+                padding: 3px;
+                input{
+                    margin-left: 2px;
+                    width: 50px;
+                    height: 100%;
+                }
+            }
+            button{
+                width: 53px;
+                height: 28px;
+                background: $red;
+                @include flex-c;
+                color: #fff;
             }
         }
     }
@@ -71,15 +117,30 @@
         }
         table{
             width: 100%;
+            border-collapse: collapse;
             tr{
+                &:hover{
+                    background: rgba(233,233,233,.5);
+                    cursor: pointer;
+                }
                 th{
                     // @include flex-c;
                     height: 27px;
                     background: #e9e9e9;
                     margin-bottom: 10px;
+                    font-weight: normal;
+                    .r{
+                        color: $red;
+                    }
                 }
                 td{
                     // @include flex-c;
+                    &.b{
+                        color: #167fd0;
+                    }
+                    &.r{
+                        color: $red;
+                    }
                     height: 49px;
                     margin-bottom: 10px;
                     text-align: center;
@@ -90,6 +151,7 @@
                         // width: 30px;
                         // height: 20px;
                     }
+                   
                 }
             }
         }
@@ -125,24 +187,56 @@
         }
         table{
             width: 100%;
+            border-collapse: collapse;
             tr{
+                &:hover{
+                    background: rgba(233,233,233,.5);
+                    cursor: pointer;
+                }
                 th{
                     // @include flex-c;
                     height: 27px;
                     background: #e9e9e9;
                     margin-bottom: 10px;
+                    .r{
+                        color: $red;
+                    }
                 }
                 td{
                     // @include flex-c;
                     height: 49px;
                     margin-bottom: 10px;
                     text-align: center;
+                    &.b{
+                        color: #167fd0;
+                    }
+                    &.r{
+                        color: $red;
+                    }
                     img{
                         // width: 100%;
                         width: 65px;
                         height: 100%;
                         // width: 30px;
                         // height: 20px;
+                    }
+                    a{
+                        color: $red;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    button{
+                        margin: 5px auto 0;
+                        width: 53px;
+                        height: 19px;
+                        @include flex-c;
+                        font-size: 12px;
+                        background: #959595;
+                        color: #fff;
+                        &.guanzhu{
+                            background: #4c94d7;
+                        }
                     }
                 }
             }
@@ -165,7 +259,7 @@
                 color: #999999;
                 margin: 3.5px;
                 &:hover,
-                &:active{
+                &.active{
                     background: #ca0f1c;
                     color: #fff;
                     cursor: pointer;

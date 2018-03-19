@@ -16,6 +16,12 @@
       margin-bottom: 20px; }
       .main .section1 .line:nth-last-child(1) {
         margin-bottom: 0; }
+      .main .section1 .line.spaceb {
+        justify-content: space-between; }
+        .main .section1 .line.spaceb .cont {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
       .main .section1 .line .title {
         text-align: right;
         height: 100%;
@@ -38,6 +44,41 @@
           cursor: pointer;
           background: #ca0f1c;
           color: #fff; }
+      .main .section1 .line .more {
+        width: 75px;
+        font-size: 12px;
+        color: #999999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 15px; }
+        .main .section1 .line .more:hover {
+          cursor: pointer;
+          color: #ca0f1c; }
+      .main .section1 .line .wrap {
+        width: 80px;
+        height: 28px;
+        box-sizing: border-box;
+        border: 1px solid #e9e9e9;
+        font-size: 12px;
+        color: #333333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5px;
+        padding: 3px; }
+        .main .section1 .line .wrap input {
+          margin-left: 2px;
+          width: 50px;
+          height: 100%; }
+      .main .section1 .line button {
+        width: 53px;
+        height: 28px;
+        background: #ca0f1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff; }
   .main .section2 {
     margin: 0 auto 20px;
     width: 1060px;
@@ -59,15 +100,26 @@
         width: 4px;
         background: #ca0f1c; }
     .main .section2 table {
-      width: 100%; }
+      width: 100%;
+      border-collapse: collapse; }
+      .main .section2 table tr:hover {
+        background: rgba(233, 233, 233, 0.5);
+        cursor: pointer; }
       .main .section2 table tr th {
         height: 27px;
         background: #e9e9e9;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-weight: normal; }
+        .main .section2 table tr th .r {
+          color: #ca0f1c; }
       .main .section2 table tr td {
         height: 49px;
         margin-bottom: 10px;
         text-align: center; }
+        .main .section2 table tr td.b {
+          color: #167fd0; }
+        .main .section2 table tr td.r {
+          color: #ca0f1c; }
         .main .section2 table tr td img {
           width: 65px;
           height: 100%; }
@@ -98,18 +150,44 @@
           color: #cc1e2a;
           border-bottom: 2px solid #cc1e2a; }
     .main .section3 table {
-      width: 100%; }
+      width: 100%;
+      border-collapse: collapse; }
+      .main .section3 table tr:hover {
+        background: rgba(233, 233, 233, 0.5);
+        cursor: pointer; }
       .main .section3 table tr th {
         height: 27px;
         background: #e9e9e9;
         margin-bottom: 10px; }
+        .main .section3 table tr th .r {
+          color: #ca0f1c; }
       .main .section3 table tr td {
         height: 49px;
         margin-bottom: 10px;
         text-align: center; }
+        .main .section3 table tr td.b {
+          color: #167fd0; }
+        .main .section3 table tr td.r {
+          color: #ca0f1c; }
         .main .section3 table tr td img {
           width: 65px;
           height: 100%; }
+        .main .section3 table tr td a {
+          color: #ca0f1c; }
+          .main .section3 table tr td a:hover {
+            text-decoration: underline; }
+        .main .section3 table tr td button {
+          margin: 5px auto 0;
+          width: 53px;
+          height: 19px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          background: #959595;
+          color: #fff; }
+          .main .section3 table tr td button.guanzhu {
+            background: #4c94d7; }
     .main .section3 .fenye {
       width: 100%;
       height: 123px;
@@ -127,7 +205,7 @@
         font-size: 14px;
         color: #999999;
         margin: 3.5px; }
-        .main .section3 .fenye .rect:hover, .main .section3 .fenye .rect:active {
+        .main .section3 .fenye .rect:hover, .main .section3 .fenye .rect.active {
           background: #ca0f1c;
           color: #fff;
           cursor: pointer; }

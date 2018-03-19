@@ -41,33 +41,42 @@
     </div>
     <div class="main">
         <div class="section1">
-            <div class="line">
-                <div class="title">品牌：</div>
-                <div class="item">全部</div>
-                <div class="item">大众</div>
-                <div class="item">日产别克</div>
-                <div class="item">雪佛兰</div>
-                <div class="item">奇瑞</div>
-                <div class="item">铃木</div>
-                <div class="item">雪铁龙</div>
-                <div class="item">长安福特</div>
+            <div class="line spaceb">
+                <div class="cont">
+                    <div class="title">品牌：</div>
+                    <div class="item active">全部</div>
+                    <div class="item">大众</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
+                </div>
+                <div class="more">更多品牌<i class="iconfont icon-xiajiantou"></i></div>
             </div>
             <div class="line">
                 <div class="title">车辆类型：</div>
-                <div class="item">全部</div>
+                <div class="item active">全部</div>
                 <div class="item">事故车</div>
                 <div class="item">二手车</div>
             </div>
             <div class="line">
                 <div class="title">事故类型：</div>
-                <div class="item">全部</div>
+                <div class="item active">全部</div>
                 <div class="item">碰撞</div>
                 <div class="item">火烧水</div>
                 <div class="item">淹盗抢</div>
             </div>
             <div class="line">
                 <div class="title">车辆年限：</div>
-                <div class="item">全部</div>
+                <div class="item active">全部</div>
                 <div class="item">1年以内</div>
                 <div class="item">1~3年</div>
                 <div class="item">3~6年</div>
@@ -76,15 +85,23 @@
             </div>
             <div class="line">
                 <div class="title">起拍价：</div>
-                <div class="item">全部</div>
+                <div class="item active">全部</div>
                 <div class="item">0~2万</div>
                 <div class="item">2~5万</div>
                 <div class="item">5~10万</div>
                 <div class="item">10万以上</div>
+                <div class="wrap">
+                    <input type="text">万
+                </div>
+                <span>-</span>
+                <div class="wrap">
+                    <input type="text">万
+                </div>
+                <button>确定</button>
             </div>
             <div class="line">
                 <div class="title">拍卖期次：</div>
-                <div class="item">全部</div>
+                <div class="item active">全部</div>
                 <div class="item">2018-02-05</div>
                 <div class="item">2018-02-06</div>
                 <div class="item">以后</div>
@@ -103,7 +120,7 @@
                     <th>车牌展示</th>
                     <th>暂存地</th>
                     <th>事故类型</th>
-                    <th>当前价（元）</th>
+                    <th>当前价<span class="r">（元）</span></th>
                     <th>计划结束时间</th>
                     <th>拍卖状态</th>
                     <th>成交状态</th>
@@ -115,11 +132,11 @@
                     </td>
                     <td>2018-3-14-1</td>
                     <td>1</td>
-                    <td>宝马5系 2.0</td>
+                    <td class="b">宝马5系 2.0</td>
                     <td>渝A</td>
                     <td>重庆</td>
                     <td>火烧</td>
-                    <td>23500</td>
+                    <td class="r">23500</td>
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
@@ -161,7 +178,7 @@
         </div>
         <div class="section3">
             <div class="title">
-                <div class="item">网络拍车</div>
+                <div class="item active">网络拍车</div>
                 <div class="item">现场拍车</div>
             </div>
             <table>
@@ -193,7 +210,11 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button class="guanzhu">关注</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -209,7 +230,11 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button>取消关注</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -225,7 +250,11 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button class="guanzhu">关注</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -241,7 +270,30 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button>取消关注</button>
+                    </td>
+                </tr>
+                    <td>
+                        <img src="./img/p7.jpg" alt="">
+                    </td>
+                    <td>2018-3-14-1</td>
+                    <td>1</td>
+                    <td>宝马5系 2.0</td>
+                    <td>渝A</td>
+                    <td>重庆</td>
+                    <td>火烧</td>
+                    <td>23500</td>
+                    <td>2018-02-20 13:01:20</td>
+                    <td>设置投标价中</td>
+                    <td>有投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button class="guanzhu">关注</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -257,7 +309,30 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button>取消关注</button>
+                    </td>
+                </tr>
+                    <td>
+                        <img src="./img/p7.jpg" alt="">
+                    </td>
+                    <td>2018-3-14-1</td>
+                    <td>1</td>
+                    <td>宝马5系 2.0</td>
+                    <td>渝A</td>
+                    <td>重庆</td>
+                    <td>火烧</td>
+                    <td>23500</td>
+                    <td>2018-02-20 13:01:20</td>
+                    <td>设置投标价中</td>
+                    <td>有投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button class="guanzhu">关注</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -273,7 +348,30 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button>取消关注</button>
+                    </td>
+                </tr>
+                    <td>
+                        <img src="./img/p7.jpg" alt="">
+                    </td>
+                    <td>2018-3-14-1</td>
+                    <td>1</td>
+                    <td>宝马5系 2.0</td>
+                    <td>渝A</td>
+                    <td>重庆</td>
+                    <td>火烧</td>
+                    <td>23500</td>
+                    <td>2018-02-20 13:01:20</td>
+                    <td>设置投标价中</td>
+                    <td>有投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button class="guanzhu">关注</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -289,7 +387,30 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button>取消关注</button>
+                    </td>
+                </tr>
+                    <td>
+                        <img src="./img/p7.jpg" alt="">
+                    </td>
+                    <td>2018-3-14-1</td>
+                    <td>1</td>
+                    <td>宝马5系 2.0</td>
+                    <td>渝A</td>
+                    <td>重庆</td>
+                    <td>火烧</td>
+                    <td>23500</td>
+                    <td>2018-02-20 13:01:20</td>
+                    <td>设置投标价中</td>
+                    <td>有投标价</td>
+                    <td>
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button class="guanzhu">关注</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -305,71 +426,11 @@
                     <td>2018-02-20 13:01:20</td>
                     <td>设置投标价中</td>
                     <td>有投标价</td>
-                    <td>设置投标价</td>
-                </tr>
-                <tr>
                     <td>
-                        <img src="./img/p7.jpg" alt="">
+                        <a href="">设置投标价</a>
+                        <br />
+                        <button>取消关注</button>
                     </td>
-                    <td>2018-3-14-1</td>
-                    <td>1</td>
-                    <td>宝马5系 2.0</td>
-                    <td>渝A</td>
-                    <td>重庆</td>
-                    <td>火烧</td>
-                    <td>23500</td>
-                    <td>2018-02-20 13:01:20</td>
-                    <td>设置投标价中</td>
-                    <td>有投标价</td>
-                    <td>设置投标价</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./img/p7.jpg" alt="">
-                    </td>
-                    <td>2018-3-14-1</td>
-                    <td>1</td>
-                    <td>宝马5系 2.0</td>
-                    <td>渝A</td>
-                    <td>重庆</td>
-                    <td>火烧</td>
-                    <td>23500</td>
-                    <td>2018-02-20 13:01:20</td>
-                    <td>设置投标价中</td>
-                    <td>有投标价</td>
-                    <td>设置投标价</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./img/p7.jpg" alt="">
-                    </td>
-                    <td>2018-3-14-1</td>
-                    <td>1</td>
-                    <td>宝马5系 2.0</td>
-                    <td>渝A</td>
-                    <td>重庆</td>
-                    <td>火烧</td>
-                    <td>23500</td>
-                    <td>2018-02-20 13:01:20</td>
-                    <td>设置投标价中</td>
-                    <td>有投标价</td>
-                    <td>设置投标价</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./img/p7.jpg" alt="">
-                    </td>
-                    <td>2018-3-14-1</td>
-                    <td>1</td>
-                    <td>宝马5系 2.0</td>
-                    <td>渝A</td>
-                    <td>重庆</td>
-                    <td>火烧</td>
-                    <td>23500</td>
-                    <td>2018-02-20 13:01:20</td>
-                    <td>设置投标价中</td>
-                    <td>有投标价</td>
-                    <td>设置投标价</td>
                 </tr>
             </table>
             <div class="fenye">
@@ -377,7 +438,7 @@
                 <div class="rect">1</div>
                 <div class="rect">...</div>
                 <div class="rect">4</div>
-                <div class="rect">5</div>
+                <div class="rect active">5</div>
                 <div class="rect">6</div>
                 <div class="rect"><i class="iconfont icon-youjiantou1"></i></div>
             </div>

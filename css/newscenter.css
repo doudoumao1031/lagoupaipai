@@ -116,6 +116,9 @@ body {
             align-items: center;
             font-size: 18px;
             color: #333333; }
+            .main .content .infos .info .cont .top:hover {
+              cursor: pointer;
+              color: #ca0f1c; }
             .main .content .infos .info .cont .top i {
               width: 8px;
               height: 8px;
@@ -142,7 +145,7 @@ body {
           font-size: 14px;
           color: #999999;
           margin: 3.5px; }
-          .main .content .infos .fenye .rect:hover, .main .content .infos .fenye .rect:active {
+          .main .content .infos .fenye .rect:hover, .main .content .infos .fenye .rect.active {
             background: #ca0f1c;
             color: #fff;
             cursor: pointer; }

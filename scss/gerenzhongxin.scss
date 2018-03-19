@@ -55,7 +55,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        .card{
+                        .cont{
                             box-sizing: border-box;
                             border: 1px solid #d0d0d0;
                             width: 146px;
@@ -63,8 +63,13 @@
                             margin: 5px;
                             &.active,
                             &:hover{
-                                border-color: $red;
+                                // border-color: $red;
+                                // background: 
+                                @include bg-full('sjx.png');
                                 cursor: pointer;
+                            }
+                            .card{
+                                
                             }
                         }
                     }
@@ -90,6 +95,7 @@
                                 color: rgb(255, 255, 255);
                                 font-weight: bold;
                                 margin-bottom: 0;
+                                border: none;
                                 &.gongshang{
                                     background: linear-gradient(to right, #e12971, #fe5133);
                                 }
@@ -111,6 +117,26 @@
                                         font-size: 14px;
                                         color: rgb(51, 51, 51);
                                     }
+                                }
+                            }
+                        }
+                        .ewm{
+                            @include flex-c;
+                            flex-direction: column;
+                            color: #999999;
+                            .cont{
+                                width: 150px;
+                                height: 150px;
+                                box-sizing: border-box;
+                                border: 1px solid $gray;
+                                font-size: 14px;
+                                color: rgb(153, 153, 153);
+                                margin-bottom: 8px;
+                                @include flex-c;
+                                img{
+                                    width: 136px;
+                                    height: 136px;
+                                    border: none;
                                 }
                             }
                         }
@@ -155,7 +181,7 @@
                     .form{
                         .line{
                             display: flex;
-                            justify-content: center;
+                            justify-content: flex-start;
                             align-content: center;
                             align-items: center;
                             label{
@@ -168,7 +194,7 @@
                                 }
                             }
                             .title{
-                                width: 180px;
+                                width: 260px;
                                 padding-right: 10px;
                                 text-align: right;
                                 i{
@@ -183,10 +209,36 @@
                                 padding-left: 10px;
                                 font-size: 14px;
                                 color: rgb(153, 153, 153);
+                                margin-right: 120px;
+                            }
+                            select{
+                                width: 340px;
+                                height: 42px;
+                                box-sizing: border-box;
+                                border: 1px solid $gray;
+                                padding-left: 10px;
+                                font-size: 14px;
+                                color: rgb(153, 153, 153);
+                                margin-right: 120px;
+                            }
+                            &.center{
+                                justify-content: center;
+                            }
+                            &.khh{
+                                label{
+                                    margin: 0;
+                                    input,select{
+                                        width: 126px;
+                                        margin: 0;
+                                    }
+                                    span{
+                                        margin: 0 5px;
+                                    }
+                                }
                             }
                         }
                         button{
-                            margin: 15px auto 22px;
+                            margin: 20px auto 22px;
                             width: 140px;
                             height: 48px;
                             @include flex-c;
@@ -195,6 +247,48 @@
                             border-radius: 3px;
                             font-size: 16px;
                         }
+                    }
+                }
+                .qianbao{
+                    height: 98px;
+                    background: #f2f2f2;
+                    border: 1px dotted $gray;
+                    @include flex-c;
+                    .item{
+                        height: 54px;
+                        flex-grow: 1;
+                        border-right: 1px solid $gray;
+                        &:last-of-type(1){
+                            border: none;
+                        }
+                        @include flex-c;
+                        &.row{
+                            flex-direction: row;
+                        }
+                        &.column{
+                            flex-direction: column;
+                        }
+                        .price{
+                            font-size: 22px;
+                            color: #999999;
+                            &.r{
+                                color: rgb(202, 15, 28);
+                            }
+                        }
+                        .title {
+                            font-size: 14px;
+                            color: rgb(51, 51, 51);
+                        }
+                        button{
+                            width: 65px;
+                            height: 29px;
+                            @include flex-c;
+                            border-radius: 3px;
+                            font-size: 14px;
+                            color: rgb(255, 255, 255);
+                            background: $red;
+                            margin: 5px;
+                        }  
                     }
                 }
                 .header{
@@ -261,6 +355,11 @@
                         }
                     }
                     tr{
+                        &:hover{
+                            cursor: pointer;
+                            
+                            background: rgba(233,233,233,.5);
+                        }
                         height: 33px;
                         th{
                             background: #e9e9e9;
@@ -271,6 +370,9 @@
                             // max-width: 0px;
                             // width: 25%;
                             border: 1px solid $gray;
+                            &.b{color: #167fd0;}
+                            &.r{color: #ca0f1c;}
+                            &.g{color: #12922a;}
                         }
                     }
                 }

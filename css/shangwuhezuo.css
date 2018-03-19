@@ -85,6 +85,9 @@
       align-items: center;
       flex-direction: column;
       padding: 10px; }
+      .main .section2 .content .item:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
       .main .section2 .content .item .foto {
         width: 317px;
         height: 189px;
