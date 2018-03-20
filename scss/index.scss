@@ -2,6 +2,16 @@
 
 body{
     background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .main{
+        flex-grow: 1;
+    }
+    .header,.footer{
+        flex-grow: 0;
+    }
 }
 .header{
     .topbar{
@@ -95,19 +105,21 @@ body{
     }
 }
 .main{
+    width: 100%;
     .lunbo{
+        width: 100%;
         height: 593px;
         position: relative;
         .cont{
             width: 100%;
             height: 100%;
+            // height: 593px;
+            overflow: hidden;
+            @include flex-c;
             .img{
                 width: 100%;
                 height: 100%;
-                @include bg-fullc('banner.jpg');
-            }
-            .img:nth-of-type(2n){
-                @include bg-fullc('banner2.jpg');
+                // min-width: 1200px;
             }
         }
         .btns1{

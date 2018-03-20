@@ -1,7 +1,19 @@
 @import "./mixin.scss";
 
 body{
+    min-height: 100vh;
     background: #fafafa;
+    // min-height: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .header,.footer{
+        flex-grow: 0;
+    }
+    .main{
+        flex-grow: 1;
+    }
 }
 a:hover{
     cursor: pointer;
@@ -89,6 +101,7 @@ a:hover{
 //     }
 // }
 .header{
+    width: 100%;
     .topbar{
         height: 80px;
         background: #fafafa;
@@ -180,6 +193,7 @@ a:hover{
     }
 }
 .header2{
+    width: 100%;
     .topbar{
         height: 80px;
         background: #ca0f1c;

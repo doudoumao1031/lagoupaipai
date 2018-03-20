@@ -1,5 +1,13 @@
 body {
-  background: #fafafa; }
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  body .main {
+    flex-grow: 1; }
+  body .header, body .footer {
+    flex-grow: 0; }
 
 .header .topbar {
   height: 80px;
@@ -71,90 +79,358 @@ body {
         cursor: pointer;
         background: #333333; }
 
-.main .lunbo {
-  height: 593px;
-  position: relative; }
-  .main .lunbo .cont {
+.main {
+  width: 100%; }
+  .main .lunbo {
     width: 100%;
-    height: 100%; }
-    .main .lunbo .cont .img {
+    height: 593px;
+    position: relative; }
+    .main .lunbo .cont {
       width: 100%;
       height: 100%;
-      background: url("../img/banner.jpg") no-repeat center center; }
-    .main .lunbo .cont .img:nth-of-type(2n) {
-      background: url("../img/banner2.jpg") no-repeat center center; }
-  .main .lunbo .btns1 {
-    z-index: 10;
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .main .lunbo .btns1 .btn {
-      background: rgba(255, 255, 255, 0.5);
-      margin: 5px;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%; }
-      .main .lunbo .btns1 .btn.active, .main .lunbo .btns1 .btn:hover {
-        cursor: pointer;
-        background: #fff; }
-.main .section1 {
-  width: 1060px;
-  margin: 40px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; }
-  .main .section1 .content {
-    width: 790px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-    .main .section1 .content .title {
-      width: 687px;
-      height: 61px;
-      background: url("../img/zuixin_title.png") no-repeat 0 0/100% 100%;
-      margin-bottom: 44px; }
-    .main .section1 .content .infos {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .main .lunbo .cont .img {
+        width: 100%;
+        height: 100%; }
+    .main .lunbo .btns1 {
+      z-index: 10;
+      position: absolute;
+      bottom: 15px;
       width: 100%;
       display: flex;
+      justify-content: center;
+      align-items: center; }
+      .main .lunbo .btns1 .btn {
+        background: rgba(255, 255, 255, 0.5);
+        margin: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%; }
+        .main .lunbo .btns1 .btn.active, .main .lunbo .btns1 .btn:hover {
+          cursor: pointer;
+          background: #fff; }
+  .main .section1 {
+    width: 1060px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .main .section1 .content {
+      width: 790px;
+      display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
-      align-content: flex-start;
-      height: 325px; }
-      .main .section1 .content .infos .info {
-        width: 245px;
-        height: 295px;
+      align-items: center; }
+      .main .section1 .content .title {
+        width: 687px;
+        height: 61px;
+        background: url("../img/zuixin_title.png") no-repeat 0 0/100% 100%;
+        margin-bottom: 44px; }
+      .main .section1 .content .infos {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        height: 325px; }
+        .main .section1 .content .infos .info {
+          width: 245px;
+          height: 295px;
+          box-sizing: border-box;
+          border: 1px solid #dbdbdb;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          flex-shrink: 0; }
+          .main .section1 .content .infos .info:hover, .main .section1 .content .infos .info.active {
+            cursor: pointer;
+            border: 2px solid #ff2635; }
+          .main .section1 .content .infos .info:nth-of-type(2) {
+            align-self: flex-end; }
+          .main .section1 .content .infos .info .foto {
+            width: 220px;
+            height: 172px; }
+          .main .section1 .content .infos .info .content {
+            width: 220px;
+            font-size: 14px;
+            color: #333333;
+            font-weight: bold;
+            text-transform: uppercase; }
+          .main .section1 .content .infos .info .date {
+            width: 220px;
+            font-size: 14px;
+            color: #ff0d1e; }
+      .main .section1 .content .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 34px;
+        height: 37.5px;
+        width: 160px;
+        border-radius: 18.5px;
+        background: #ff0d1e;
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase; }
+        .main .section1 .content .btn:hover {
+          background: rgba(255, 13, 30, 0.8); }
+    .main .section1 .sidebar {
+      width: 250px;
+      height: 500.5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .main .section1 .sidebar .banner {
         box-sizing: border-box;
-        border: 1px solid #dbdbdb;
+        border: 1px solid #e0e0e0;
+        width: 100%;
+        padding: 10px;
         background: #fff;
+        margin-bottom: 13px; }
+        .main .section1 .sidebar .banner .title {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px; }
+          .main .section1 .sidebar .banner .title .name {
+            font-size: 16px;
+            color: #333333;
+            font-weight: bold; }
+            .main .section1 .sidebar .banner .title .name i {
+              display: inline-block;
+              width: 3px;
+              height: 15px;
+              margin-right: 9px;
+              background: #ff0f20; }
+          .main .section1 .sidebar .banner .title .more {
+            font-size: 12px;
+            color: #999999; }
+            .main .section1 .sidebar .banner .title .more:hover {
+              cursor: pointer;
+              color: #ff0f20; }
+        .main .section1 .sidebar .banner .line {
+          white-space: nowrap;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-size: 14px;
+          color: #333333;
+          margin-bottom: 14px; }
+          .main .section1 .sidebar .banner .line:hover {
+            cursor: pointer;
+            color: #ff0d1e; }
+          .main .section1 .sidebar .banner .line i {
+            display: inline-block;
+            margin-right: 9px;
+            background: #ff0d1e;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%; }
+        .main .section1 .sidebar .banner .btns {
+          display: flex;
+          justify-content: space-around;
+          align-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap; }
+          .main .section1 .sidebar .banner .btns .btn {
+            width: 106px;
+            height: 59px;
+            box-sizing: border-box;
+            border: 1px solid #d6d6d6;
+            background: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666666; }
+            .main .section1 .sidebar .banner .btns .btn i {
+              font-size: 24px; }
+            .main .section1 .sidebar .banner .btns .btn.active, .main .section1 .sidebar .banner .btns .btn:hover {
+              color: #ff0d1e;
+              cursor: pointer; }
+  .main .belt {
+    width: 100%;
+    height: 219px;
+    background: url("../img/tj_bg.jpg") repeat 0 0/100% 100%; }
+    .main .belt .cont {
+      margin: 0 auto;
+      height: 100%;
+      width: 1060px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .main .belt .cont .card {
+        margin-right: 62px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-start;
+        width: 196px;
+        height: 139px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        padding: 13px; }
+        .main .belt .cont .card .title {
+          font-size: 24px;
+          color: white;
+          font-weight: bold; }
+        .main .belt .cont .card p {
+          font-size: 16px;
+          color: white; }
+        .main .belt .cont .card .btn {
+          width: 108px;
+          height: 30px;
+          box-sizing: border-box;
+          border: 1px solid #fff;
+          font-size: 12px;
+          color: white;
+          align-self: flex-end;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main .belt .cont .card .btn:hover {
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.1); }
+      .main .belt .cont .content {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        padding: 10px;
-        flex-shrink: 0; }
-        .main .section1 .content .infos .info:hover, .main .section1 .content .infos .info.active {
+        width: 791px; }
+        .main .belt .cont .content .btn {
+          width: 57px;
+          height: 39px; }
+          .main .belt .cont .content .btn:hover {
+            cursor: pointer; }
+          .main .belt .cont .content .btn.l {
+            background: url("../img/tj_left.png") no-repeat 0 0/100% 100%; }
+          .main .belt .cont .content .btn.r {
+            background: url("../img/tj_right.png") no-repeat 0 0/100% 100%; }
+        .main .belt .cont .content .item {
+          position: relative;
+          width: 133px;
+          height: 135px;
+          color: white; }
+          .main .belt .cont .content .item img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0; }
+          .main .belt .cont .content .item .cont {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 5; }
+            .main .belt .cont .content .item .cont:hover {
+              cursor: pointer;
+              background: rgba(0, 0, 0, 0.2); }
+            .main .belt .cont .content .item .cont .name {
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 5px;
+              z-index: 1; }
+            .main .belt .cont .content .item .cont .price {
+              z-index: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px; }
+              .main .belt .cont .content .item .cont .price span {
+                width: 40px;
+                height: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                border-radius: 4px;
+                background: #ff0d1e; }
+  .main .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1060px;
+    margin: 44px auto; }
+    .main .section2 .title {
+      background: url("../img/chengjiao_title.png") no-repeat 0 0/100% 100%;
+      width: 931px;
+      height: 65px;
+      margin-bottom: 62px; }
+    .main .section2 .infos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%; }
+      .main .section2 .infos .info {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 192px;
+        width: 516px;
+        color: #333333;
+        box-sizing: border-box;
+        border: 1px solid #dcdcdc; }
+        .main .section2 .infos .info:hover {
           cursor: pointer;
-          border: 2px solid #ff2635; }
-        .main .section1 .content .infos .info:nth-of-type(2) {
-          align-self: flex-end; }
-        .main .section1 .content .infos .info .foto {
-          width: 220px;
-          height: 172px; }
-        .main .section1 .content .infos .info .content {
-          width: 220px;
-          font-size: 14px;
-          color: #333333;
-          font-weight: bold;
-          text-transform: uppercase; }
-        .main .section1 .content .infos .info .date {
-          width: 220px;
-          font-size: 14px;
-          color: #ff0d1e; }
-    .main .section1 .content .btn {
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4); }
+        .main .section2 .infos .info .foto {
+          height: 100%;
+          width: 266px; }
+        .main .section2 .infos .info .content {
+          box-sizing: border-box;
+          height: 100%;
+          padding: 16px 20px; }
+          .main .section2 .infos .info .content .name {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px; }
+          .main .section2 .infos .info .content p {
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; }
+            .main .section2 .infos .info .content p span {
+              height: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 3px;
+              color: #fff; }
+              .main .section2 .infos .info .content p span.r {
+                width: 28px;
+                background: #ff0d1e; }
+              .main .section2 .infos .info .content p span.g {
+                width: 28px;
+                background: #5bba22; }
+              .main .section2 .infos .info .content p span.price {
+                font-size: 20px;
+                color: #ff0d1e;
+                font-weight: bold;
+                text-transform: uppercase; }
+    .main .section2 .btn {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -166,272 +442,8 @@ body {
       font-size: 14px;
       color: white;
       text-transform: uppercase; }
-      .main .section1 .content .btn:hover {
+      .main .section2 .btn:hover {
         background: rgba(255, 13, 30, 0.8); }
-  .main .section1 .sidebar {
-    width: 250px;
-    height: 500.5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; }
-    .main .section1 .sidebar .banner {
-      box-sizing: border-box;
-      border: 1px solid #e0e0e0;
-      width: 100%;
-      padding: 10px;
-      background: #fff;
-      margin-bottom: 13px; }
-      .main .section1 .sidebar .banner .title {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px; }
-        .main .section1 .sidebar .banner .title .name {
-          font-size: 16px;
-          color: #333333;
-          font-weight: bold; }
-          .main .section1 .sidebar .banner .title .name i {
-            display: inline-block;
-            width: 3px;
-            height: 15px;
-            margin-right: 9px;
-            background: #ff0f20; }
-        .main .section1 .sidebar .banner .title .more {
-          font-size: 12px;
-          color: #999999; }
-          .main .section1 .sidebar .banner .title .more:hover {
-            cursor: pointer;
-            color: #ff0f20; }
-      .main .section1 .sidebar .banner .line {
-        white-space: nowrap;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 14px;
-        color: #333333;
-        margin-bottom: 14px; }
-        .main .section1 .sidebar .banner .line:hover {
-          cursor: pointer;
-          color: #ff0d1e; }
-        .main .section1 .sidebar .banner .line i {
-          display: inline-block;
-          margin-right: 9px;
-          background: #ff0d1e;
-          width: 5px;
-          height: 5px;
-          border-radius: 50%; }
-      .main .section1 .sidebar .banner .btns {
-        display: flex;
-        justify-content: space-around;
-        align-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap; }
-        .main .section1 .sidebar .banner .btns .btn {
-          width: 106px;
-          height: 59px;
-          box-sizing: border-box;
-          border: 1px solid #d6d6d6;
-          background: #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          margin-bottom: 10px;
-          font-size: 14px;
-          color: #666666; }
-          .main .section1 .sidebar .banner .btns .btn i {
-            font-size: 24px; }
-          .main .section1 .sidebar .banner .btns .btn.active, .main .section1 .sidebar .banner .btns .btn:hover {
-            color: #ff0d1e;
-            cursor: pointer; }
-.main .belt {
-  width: 100%;
-  height: 219px;
-  background: url("../img/tj_bg.jpg") repeat 0 0/100% 100%; }
-  .main .belt .cont {
-    margin: 0 auto;
-    height: 100%;
-    width: 1060px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-    .main .belt .cont .card {
-      margin-right: 62px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-      width: 196px;
-      height: 139px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      border-top-left-radius: 8px;
-      box-sizing: border-box;
-      border: 1px solid #fff;
-      padding: 13px; }
-      .main .belt .cont .card .title {
-        font-size: 24px;
-        color: white;
-        font-weight: bold; }
-      .main .belt .cont .card p {
-        font-size: 16px;
-        color: white; }
-      .main .belt .cont .card .btn {
-        width: 108px;
-        height: 30px;
-        box-sizing: border-box;
-        border: 1px solid #fff;
-        font-size: 12px;
-        color: white;
-        align-self: flex-end;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .main .belt .cont .card .btn:hover {
-          cursor: pointer;
-          background: rgba(255, 255, 255, 0.1); }
-    .main .belt .cont .content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 791px; }
-      .main .belt .cont .content .btn {
-        width: 57px;
-        height: 39px; }
-        .main .belt .cont .content .btn:hover {
-          cursor: pointer; }
-        .main .belt .cont .content .btn.l {
-          background: url("../img/tj_left.png") no-repeat 0 0/100% 100%; }
-        .main .belt .cont .content .btn.r {
-          background: url("../img/tj_right.png") no-repeat 0 0/100% 100%; }
-      .main .belt .cont .content .item {
-        position: relative;
-        width: 133px;
-        height: 135px;
-        color: white; }
-        .main .belt .cont .content .item img {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          z-index: 0; }
-        .main .belt .cont .content .item .cont {
-          position: absolute;
-          top: 0;
-          left: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.5);
-          z-index: 5; }
-          .main .belt .cont .content .item .cont:hover {
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.2); }
-          .main .belt .cont .content .item .cont .name {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            z-index: 1; }
-          .main .belt .cont .content .item .cont .price {
-            z-index: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px; }
-            .main .belt .cont .content .item .cont .price span {
-              width: 40px;
-              height: 18px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 12px;
-              border-radius: 4px;
-              background: #ff0d1e; }
-.main .section2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 1060px;
-  margin: 44px auto; }
-  .main .section2 .title {
-    background: url("../img/chengjiao_title.png") no-repeat 0 0/100% 100%;
-    width: 931px;
-    height: 65px;
-    margin-bottom: 62px; }
-  .main .section2 .infos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%; }
-    .main .section2 .infos .info {
-      margin-bottom: 15px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      height: 192px;
-      width: 516px;
-      color: #333333;
-      box-sizing: border-box;
-      border: 1px solid #dcdcdc; }
-      .main .section2 .infos .info:hover {
-        cursor: pointer;
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4); }
-      .main .section2 .infos .info .foto {
-        height: 100%;
-        width: 266px; }
-      .main .section2 .infos .info .content {
-        box-sizing: border-box;
-        height: 100%;
-        padding: 16px 20px; }
-        .main .section2 .infos .info .content .name {
-          font-size: 16px;
-          font-weight: bold;
-          text-transform: uppercase;
-          margin-bottom: 20px; }
-        .main .section2 .infos .info .content p {
-          font-size: 12px;
-          text-transform: uppercase;
-          margin-bottom: 4px;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center; }
-          .main .section2 .infos .info .content p span {
-            height: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 3px;
-            color: #fff; }
-            .main .section2 .infos .info .content p span.r {
-              width: 28px;
-              background: #ff0d1e; }
-            .main .section2 .infos .info .content p span.g {
-              width: 28px;
-              background: #5bba22; }
-            .main .section2 .infos .info .content p span.price {
-              font-size: 20px;
-              color: #ff0d1e;
-              font-weight: bold;
-              text-transform: uppercase; }
-  .main .section2 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 34px;
-    height: 37.5px;
-    width: 160px;
-    border-radius: 18.5px;
-    background: #ff0d1e;
-    font-size: 14px;
-    color: white;
-    text-transform: uppercase; }
-    .main .section2 .btn:hover {
-      background: rgba(255, 13, 30, 0.8); }
 
 .footer {
   width: 100%;
