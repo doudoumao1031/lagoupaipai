@@ -20,6 +20,9 @@ a {
   color: #999999;
   text-decoration: none; }
 
+ul li {
+  list-style: none; }
+
 button {
   background: none;
   border: none;

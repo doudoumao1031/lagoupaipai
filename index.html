@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/cycle.js"></script>
+    <script src="js/jcarousellite.min.js"></script>
+    <!-- <script src="js/H-ui.min.js"></script> -->
 </head>
 <body>
     <div class="header">
@@ -21,9 +23,13 @@
                     <span class="phone">7X24小时服务热线：<b>023-67116008</b></span>
                     <a href="paimaidating.html" class="item">进入拍卖大厅</a>
                     <a class="item"><i class="iconfont icon-msnui-tel"></i>手机拍车</a>
-                    <span class="reg">
+                    <!-- <div class="reg">
                         <a>登录</a>|<a>注册</a>
-                    </span>
+                    </div> -->
+                    <div class="reged">
+                        <a class="item"><i class="iconfont icon-yonghu"></i>15126594586</a>
+                        <a class="item"><i class="iconfont icon-tuichu"></i>退出</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,39 +137,52 @@
                     <p>Recommended items</p>
                     <div class="btn">查看更多>></div>
                 </div>
-                <div class="content">
-                    <div class="btn l"></div>
-                    <div class="item">
-                        <img src="img/p4.jpg" class="cont" alt="">
-                        <div class="cont">
-                            <div class="name">福特</div>
-                            <div class="price"><span>起拍价</span>￥6000</div>
-                        </div>
+                <div class="outer">
+                    <a href="javascript:void(0)" id="prev" class="btn l"></a>
+                    <div id="rollpicshow" class="content">
+                        <ul>
+                            <li class="item">
+                                <img src="img/p4.jpg" class="cont" alt="">
+                                <div class="cont">
+                                    <div class="name">福lnklonhkniobhuioubniobniobiobuioub特</div>
+                                    <div class="price"><span>起拍价</span>￥6000</div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <img src="img/p4.jpg" class="cont" alt="">
+                                <div class="cont">
+                                    <div class="name">福特</div>
+                                    <div class="price"><span>起拍价</span>￥6000</div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <img src="img/p4.jpg" class="cont" alt="">
+                                <div class="cont">
+                                    <div class="name">福特</div>
+                                    <div class="price"><span>起拍价</span>￥6000</div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <img src="img/p4.jpg" class="cont" alt="">
+                                <div class="cont">
+                                    <div class="name">福特</div>
+                                    <div class="price"><span>起拍价</span>￥6000</div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <img src="img/p4.jpg" class="cont" alt="">
+                                <div class="cont">
+                                    <div class="name">福特</div>
+                                    <div class="price"><span>起拍价</span>￥6000</div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                      
+                       
                     </div>
-                    <div class="item">
-                        <img src="img/p4.jpg" class="cont" alt="">
-                        <div class="cont">
-                            <div class="name">福特</div>
-                            <div class="price"><span>起拍价</span>￥6000</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/p4.jpg" class="cont" alt="">
-                        <div class="cont">
-                            <div class="name">福特</div>
-                            <div class="price"><span>起拍价</span>￥6000</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/p4.jpg" class="cont" alt="">
-                        <div class="cont">
-                            <div class="name">福特</div>
-                            <div class="price"><span>起拍价</span>￥6000</div>
-                        </div>
-                    </div>
-                  
-                   
-                    <div class="btn r"></div>
+                    <a href="javascript:void(0)" id="next" class="btn r"></a>
+
                 </div>
             </div>
         </div>
@@ -284,6 +303,13 @@
             pagerAnchorBuilder: function(idx, slide){
                 return '<div class="btn"></div>';
             }
+        });
+        $("#rollpicshow").jCarouselLite({
+            auto: 3000, /*自动播放间隔时间*/
+            speed: 500, /*速度*/
+            btnNext:"#next",/*向前滚动*/
+            btnPrev:"#prev",/*向后滚动*/
+            visible:4 /*显示数量*/
         });
     </script>
 </body>

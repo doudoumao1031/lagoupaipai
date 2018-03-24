@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/paimaidating.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <div class="header2">
@@ -40,10 +41,25 @@
         </div>
     </div>
     <div class="main">
+        <!-- 弹窗 -->
+        <!-- <div class="tanchuang">
+            <div class="banner">
+                <div class="top">设置投标价</div>
+                <div class="line">
+                    <input placeholder="请输入投标价" type="text">
+                    <span class="r">元</span>
+                </div>
+                <div class="line">
+                    <button class="cancel">取消</button>
+                    <button class="confirm">确认</button>
+                </div>
+            </div>
+        </div> -->
+        <!-- 弹窗结束 -->
         <div class="section1">
-            <div class="line spaceb">
-                <div class="cont">
-                    <div class="title">品牌：</div>
+            <div class="spaceb">
+                <div class="title">品牌：</div>
+                <div id="" class="moreitems cont">
                     <div class="item active">全部</div>
                     <div class="item">大众</div>
                     <div class="item">日产别克</div>
@@ -58,23 +74,77 @@
                     <div class="item">铃木</div>
                     <div class="item">雪铁龙</div>
                     <div class="item">长安福特</div>
+                    <div class="item">大众</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
+                    <div class="item">大众</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
+                    <div class="item">大众</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
+                    <div class="item">日产别克</div>
+                    <div class="item">雪佛兰</div>
+                    <div class="item">奇瑞</div>
+                    <div class="item">铃木</div>
+                    <div class="item">雪铁龙</div>
+                    <div class="item">长安福特</div>
                 </div>
-                <div class="more">更多品牌<i class="iconfont icon-xiajiantou"></i></div>
+                <!-- <button id="" class="morebtn more">更多<i class="iconfont icon-xiajiantou"></i></button> -->
             </div>
-            <div class="line">
+            <div class="spaceb">
                 <div class="title">车辆类型：</div>
-                <div class="item active">全部</div>
-                <div class="item">事故车</div>
-                <div class="item">二手车</div>
+                <div id="" class="moreitems cont">
+                    <div class="item active">全部</div>
+                    <div class="item">事故车</div>
+                    <div class="item">二手车</div>
+                </div>
             </div>
-            <div class="line">
+            <div class="spaceb">
                 <div class="title">事故类型：</div>
-                <div class="item active">全部</div>
-                <div class="item">碰撞</div>
-                <div class="item">火烧水</div>
-                <div class="item">淹盗抢</div>
+                <div id="" class="moreitems cont">
+                    <div class="item active">全部</div>
+                    <div class="item">碰撞</div>
+                    <div class="item">火烧水</div>
+                    <div class="item">淹盗抢</div>
+                </div>
             </div>
-            <div class="line">
+            <div class="spaceb">
+                <div class="title">车辆年限：</div>
+                <div id="" class="moreitems cont">
+                    <div class="item active">全部</div>
+                    <div class="item">1年以内</div>
+                    <div class="item">1~3年</div>
+                    <div class="item">3~6年</div>
+                    <div class="item">6~10年</div>
+                    <div class="item">10年以上</div>
+                </div>
+            </div>
+            <!-- <div class="line">
                 <div class="title">车辆年限：</div>
                 <div class="item active">全部</div>
                 <div class="item">1年以内</div>
@@ -82,8 +152,26 @@
                 <div class="item">3~6年</div>
                 <div class="item">6~10年</div>
                 <div class="item">10年以上</div>
+            </div> -->
+            <div class="spaceb">
+                <div class="title">起拍价：</div>
+                <div id="" class="moreitems cont">
+                    <div class="item active">全部</div>
+                    <div class="item">0~2万</div>
+                    <div class="item">2~5万</div>
+                    <div class="item">5~10万</div>
+                    <div class="item">10万以上</div>
+                    <div class="wrap">
+                        <input type="text">万
+                    </div>
+                    <span>-</span>
+                    <div class="wrap">
+                        <input type="text">万
+                    </div>
+                    <button>确定</button>
+                </div>
             </div>
-            <div class="line">
+            <!-- <div class="line">
                 <div class="title">起拍价：</div>
                 <div class="item active">全部</div>
                 <div class="item">0~2万</div>
@@ -98,14 +186,23 @@
                     <input type="text">万
                 </div>
                 <button>确定</button>
+            </div> -->
+            <div class="spaceb">
+                <div class="title">起拍价：</div>
+                <div id="" class="moreitems cont">
+                    <div class="item active">全部</div>
+                    <div class="item">2018-02-05</div>
+                    <div class="item">2018-02-06</div>
+                    <div class="item">以后</div>
+                </div>
             </div>
-            <div class="line">
+            <!-- <div class="line">
                 <div class="title">拍卖期次：</div>
                 <div class="item active">全部</div>
                 <div class="item">2018-02-05</div>
                 <div class="item">2018-02-06</div>
                 <div class="item">以后</div>
-            </div>
+            </div> -->
         </div>
         <div class="section2">
             <div class="title">
@@ -496,4 +593,16 @@
         </div>
     </div>
 </body>
+<script>
+    $('.moreitems').each(function(){
+        console.log($(this).height());
+        if($(this).height() > 30){
+            $(this).addClass('compress');
+            $(this).parent().append('<button id="" class="morebtn more">更多<i class="iconfont icon-xiajiantou"></i></button>');
+        }
+    });
+    $('.morebtn').click(function(){
+        $(this).siblings('.moreitems').toggleClass('compress');
+    });
+</script>
 </html>

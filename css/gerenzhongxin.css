@@ -446,6 +446,17 @@
           height: 34px; }
           .main .section .content .cell .gerenziliao .line.idcard {
             height: 172px; }
+            .main .section .content .cell .gerenziliao .line.idcard .val .cont .reg {
+              display: none; }
+              .main .section .content .cell .gerenziliao .line.idcard .val .cont .reg.show {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; }
+            .main .section .content .cell .gerenziliao .line.idcard .val .cont img {
+              display: none; }
+              .main .section .content .cell .gerenziliao .line.idcard .val .cont img.show {
+                display: block; }
           .main .section .content .cell .gerenziliao .line .title {
             text-align: right;
             width: 122px;

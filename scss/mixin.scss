@@ -1,6 +1,12 @@
 $red:#ca0f1c;
 $gray: #e9e9e9;
 
+@mixin shenglue(){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @mixin bg-full($url){
     background: url("../img/" + $url ) no-repeat 0 0/100% 100%;
 }

@@ -64,20 +64,20 @@
   margin: 0 auto;
   width: 1060px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 62px; }
   .main .section2 .content .item {
     height: 117px;
-    width: 176px;
+    width: 176.5px;
     background: #fff;
     box-sizing: border-box;
     border: 1px solid #efefef;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; }
+    flex-grow: 0; }
     .main .section2 .content .item .banner {
       width: 80%;
       height: 80%; }

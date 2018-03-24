@@ -13,6 +13,7 @@ body{
     }
     .main{
         flex-grow: 1;
+        width: 100%;
     }
 }
 a:hover{
@@ -119,7 +120,8 @@ a:hover{
             }
             .infos{
                 display: flex;
-                justify-content: center;
+                // justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 margin-right: 15px;
                 .phone{
@@ -147,9 +149,11 @@ a:hover{
                     }
                 }
                 .reg {
+                    @include flex-c;
+                    width: 160px;
                     font-size: 12px;
                     color: rgb(102, 102, 102);
-                    width: 72px;
+                    // width: 72px;
                     display: flex;
                     justify-content: space-between;
                     a{
@@ -159,7 +163,26 @@ a:hover{
                         }
                     }
                 }
-                    
+                .reged{
+                    width: 160px;
+                    @include flex-c;
+                    .item {
+                        // @include flex-c;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        margin-right: 10px;
+                        &:nth-last-child(1){
+                            margin: 0;
+                        }
+                        font-size: 12px;
+                        // color: rgb(255, 13, 30);
+                        color: rgb(102, 102, 102);
+                        i{
+                            font-size: 18px;
+                        }
+                    }
+                }
             }
         }
     }

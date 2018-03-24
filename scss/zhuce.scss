@@ -2,7 +2,7 @@
 
 .main{
     margin: 0 auto;
-    width: 1060px;
+    width: 1060px !important;
     position: relative;
     padding-top: 51px;
     .belt{
@@ -85,15 +85,22 @@
                 border-radius: 2px;
             }
         }
+        .text{
+            height: 15px;
+            width: 100%;
+            @include flex-c;
+            color: $red;
+        }
         .confirm{
             width: 100%;
             height: 42px;
             border-radius: 2px;
             @include flex-c;
+            // flex-direction: column;
             background: #ca0f1c;
             font-size: 16px;
             color: #fff;
-            margin: 20px 0;
+            margin: 10px 0 20px;
         }
         .info{
             align-self: flex-end;

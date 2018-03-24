@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/paimaidating_detail.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/textslider.js"></script>
+    <script src="js/jcarousellite.min.js"></script>
 </head>
 <body>
     <div class="header2">
@@ -40,10 +43,115 @@
         </div>
     </div>
     <div class="main">
+        <!-- 弹窗 -->
+        <!-- <div class="tanchuang">
+            <div class="banner">
+                <div class="top">
+                    <span>拍品须知</span>
+                    <i class="iconfont icon-guanbi"></i>
+                </div>
+                <div class="cont">
+                    <div class="text">
+                        <p>我公司会员部工作人员会协助会员办理过户手续，会员修车完成后，会员请联系拉勾拍拍的会员服务专,会员办理过户手续，会员修车完成后，</p>
+                        <p>我公司会员部工作人员会协助会员办理过户手续，会员修车完成后，会员请联系拉勾拍拍的会员服务专,会员办理过户手续，会员修车完成后，</p>
+                    </div>
+                </div>
+                <button>确 定</button>
+            </div>
+        </div> -->
+        <!-- 弹窗结束 -->
+        <!-- 边栏 -->
+        <div id="sidebar" class="sidebar">
+            <div id="scrollDiv" class="content">
+                <div class="cl text-r">
+                    <span class="btn up" style="cursor: pointer;">↑ 向上</span> 
+                    <div class="scrollText bk_gray pd-10 mt-10">
+                        <ul>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/p2.jpg" class="foto" alt="">
+                                <div class="content">
+                                    现代 悦动 2011款 1.6 手动 舒适型
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="btn down" style="cursor: pointer;">↓ 向下</span>
+                </div>
+            </div>
+            <button id="slide">拍卖车辆盗导航</button>
+        </div>
+        <!-- 边栏结束 -->
         <div class="section1">
             <div class="foto">
-                <div class="img"></div>
-                <div class="tabbar">
+                <img id="fotoimg" class="img"  src="img/p1.jpg" alt="">
+                <div class="rollpic cl tabbar"> 
+                    <a href="javascript:void(0)" class="prev jiantou l"></a>
+                    <div class="rollpicshow">
+                      <ul>
+                        <li class="fototab"><img class="item" title="" src="img/p1.jpg"></li>
+                        <li class="fototab"><img class="item" title="" src="img/p2.jpg"></li>
+                        <li class="fototab"><img class="item" title="" src="img/p3.jpg"></li>
+                        <li class="fototab"><img class="item" title="" src="img/p4.jpg"></li>
+                        <li class="fototab"><img class="item" title="" src="img/p5.jpg"></li>
+                      </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="next jiantou r"></a>
+                </div>
+                <!-- <div class="tabbar">
                     <div class="jiantou l"></div>
                     <div class="item"></div>
                     <div class="item"></div>
@@ -51,7 +159,7 @@
                     <div class="item"></div>
                     <div class="item"></div>
                     <div class="jiantou r"></div>
-                </div>
+                </div> -->
             </div>
             <div class="infos">
                 <div class="title">现代 悦动 2011款 1.6 手动 舒适型</div>
@@ -103,38 +211,85 @@
                 <div class="price">
                     当前价：<span>10.02</span>万
                 </div>
-                <table>
-                    <tr>
-                        <th>拍卖用户</th>
-                        <th>拍卖时间</th>
-                        <th>当前价格</th>
-                    </tr>
-                    <tr>
-                        <td>15166548542</td>
-                        <td>2018-02-03 15:44:02</td>
-                        <td>10.12万</td>
-                    </tr>
-                    <tr>
-                        <td>15166548542</td>
-                        <td>2018-02-03 15:44:02</td>
-                        <td>10.12万</td>
-                    </tr>
-                    <tr>
-                        <td>15166548542</td>
-                        <td>2018-02-03 15:44:02</td>
-                        <td>10.12万</td>
-                    </tr>
-                    <tr>
-                        <td>15166548542</td>
-                        <td>2018-02-03 15:44:02</td>
-                        <td>10.12万</td>
-                    </tr>
-                    <tr>
-                        <td>15166548542</td>
-                        <td>2018-02-03 15:44:02</td>
-                        <td>10.12万</td>
-                    </tr>
-                </table>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr class="head">
+                                <th>拍卖用户</th>
+                                <th>拍卖时间</th>
+                                <th>当前价格</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                            <tr>
+                                <td>15166548542</td>
+                                <td>2018-02-03 15:44:02</td>
+                                <td>10.12万</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
                 <div class="tishi">提示：加价成功</div>
                 <div class="addprice">
                     <div class="item">+50</div>
@@ -352,4 +507,27 @@
         </div>
     </div>
 </body>
+<script>
+    $("#scrollDiv").textSlider({
+		line:1, /*一次滚动条数，跟li有关*/
+		speed:500, /*速度*/
+		timer:3000  /*间隔时间*/
+    });
+    $('#slide').click(function(){
+        $("#sidebar").toggleClass("hide");
+    });
+
+    $(".rollpicshow").jCarouselLite({
+		auto: 2000, /*自动播放间隔时间*/
+		speed: 500, /*速度*/
+		btnNext:".next",/*向前滚动*/
+		btnPrev:".prev",/*向后滚动*/
+		visible:5 /*显示数量*/
+    });
+    
+    $(".fototab").click(function(){
+        var str = $(this).children().attr('src');
+        $('#fotoimg').attr('src',str);
+    });
+</script>
 </html>

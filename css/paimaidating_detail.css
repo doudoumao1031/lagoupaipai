@@ -1,5 +1,149 @@
 .main {
   padding: 16px 0; }
+  .main .tanchuang {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); }
+    .main .tanchuang .banner {
+      width: 788px;
+      height: 620px;
+      border: 4px solid rgba(0, 0, 0, 0.4);
+      margin: 280px auto 0;
+      background: #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+      .main .tanchuang .banner .top {
+        padding: 0 15px;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e9e9e9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #eeeeee;
+        flex-grow: 0; }
+        .main .tanchuang .banner .top i {
+          font-size: 20px; }
+          .main .tanchuang .banner .top i:hover {
+            cursor: pointer; }
+      .main .tanchuang .banner .cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1; }
+        .main .tanchuang .banner .cont .text {
+          flex-grow: 1;
+          margin: 6px auto;
+          width: 776px;
+          height: 100%;
+          box-sizing: border-box;
+          border: 1px solid #e9e9e9;
+          font-size: 14px;
+          color: #666666;
+          padding: 15px; }
+          .main .tanchuang .banner .cont .text p {
+            margin-bottom: 18px; }
+      .main .tanchuang .banner button {
+        flex-grow: 0;
+        width: 128px;
+        height: 42px;
+        border-radius: 4px;
+        background: #ca0f1c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        margin: 16px auto; }
+  .main .sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    height: 558px;
+    width: 222px;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    border: 1px solid #e9e9e9;
+    z-index: 11;
+    transition: all .5s; }
+    .main .sidebar.hide {
+      width: 0; }
+    .main .sidebar .content {
+      height: 558px;
+      width: 100%;
+      overflow: hidden; }
+      .main .sidebar .content .cl {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .main .sidebar .content .cl .btn {
+          margin: 3px auto;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main .sidebar .content .cl .btn:hover {
+            cursor: pointer;
+            color: #ca0f1c; }
+        .main .sidebar .content .cl .scrollText {
+          overflow: hidden;
+          width: 100%;
+          height: 498px; }
+          .main .sidebar .content .cl .scrollText ul {
+            z-index: 1;
+            height: 518px;
+            width: 222px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center; }
+            .main .sidebar .content .cl .scrollText ul li {
+              flex-shrink: 0;
+              background: #ffffff;
+              width: 204px;
+              height: 75px;
+              box-sizing: border-box;
+              border: 1px solid #e9e9e9;
+              margin-bottom: 9px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .main .sidebar .content .cl .scrollText ul li .foto {
+                margin-left: 7px;
+                width: 72px;
+                height: 56px; }
+              .main .sidebar .content .cl .scrollText ul li .content {
+                width: 116px;
+                height: 56px;
+                padding: 6px;
+                font-size: 14px;
+                color: #333333;
+                line-height: 20px; }
+    .main .sidebar button {
+      height: 148px;
+      width: 37px;
+      position: absolute;
+      right: -37px;
+      top: 259px;
+      transform: translate3d(0, -70px, 0);
+      background: #ca0f1c;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-size: 14px;
+      color: white;
+      padding: 8px 10px; }
   .main .section1 {
     margin: 0 auto;
     width: 1060px;
@@ -18,14 +162,18 @@
         margin-bottom: 18px; }
       .main .section1 .foto .tabbar {
         height: 56px;
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        .main .section1 .foto .tabbar .item {
-          width: 56px;
-          height: 100%;
-          background: url("../img/p8.jpg") no-repeat 0 0/100% 100%; }
+        .main .section1 .foto .tabbar .rollpicshow ul li {
+          margin: 0 10px; }
+          .main .section1 .foto .tabbar .rollpicshow ul li:hover {
+            cursor: pointer; }
+          .main .section1 .foto .tabbar .rollpicshow ul li .item {
+            width: 56px;
+            height: 56px; }
+            .main .section1 .foto .tabbar .rollpicshow ul li .item:hover {
+              cursor: pointer; }
         .main .section1 .foto .tabbar .jiantou {
           height: 43px;
           width: 25px; }
@@ -111,16 +259,30 @@
           color: #ca0f1c;
           font-size: 22px;
           font-weight: bold; }
-      .main .section1 .infos table {
+      .main .section1 .infos .table {
         width: 100%;
-        border: 1px solid #e9e9e9;
-        margin-bottom: 9px; }
-        .main .section1 .infos table tr {
-          height: 25px; }
-          .main .section1 .infos table tr th {
-            background: #f2f2f2; }
-          .main .section1 .infos table tr td {
-            text-align: center; }
+        height: 164px !important;
+        margin-bottom: 9px;
+        flex-grow: 0;
+        overflow: auto; }
+        .main .section1 .infos .table table {
+          width: 100%;
+          border: 1px solid #e9e9e9; }
+          .main .section1 .infos .table table thead {
+            height: 25px; }
+            .main .section1 .infos .table table thead tr {
+              height: 25px; }
+              .main .section1 .infos .table table thead tr th {
+                background: #f2f2f2; }
+          .main .section1 .infos .table table tbody {
+            width: 100%;
+            height: 139px !important;
+            flex-grow: 0;
+            overflow: auto; }
+            .main .section1 .infos .table table tbody tr {
+              height: 25px; }
+              .main .section1 .infos .table table tbody tr td {
+                text-align: center; }
       .main .section1 .infos .tishi {
         width: 100%;
         display: flex;
