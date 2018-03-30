@@ -61,9 +61,11 @@ body{
             }
             .panel{
                 display: none;
+                overflow: hidden;
                 .element{
                     height: 40px;
                     width: 100%;
+                    box-sizing: border-box;
                     background:#f8f8f8;
                     // @include flex-c;
                     padding-left: 50px;

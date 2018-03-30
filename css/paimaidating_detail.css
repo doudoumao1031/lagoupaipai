@@ -1,6 +1,7 @@
 .main {
   padding: 16px 0; }
   .main .tanchuang {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,6 +64,46 @@
         align-items: center;
         font-size: 16px;
         margin: 16px auto; }
+  .main .tanchuang2 {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main .tanchuang2 .banner {
+      width: 775px;
+      height: 550px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      background: url("../img/zhongbiao_bg.png") no-repeat 0 0/100% 100%; }
+      .main .tanchuang2 .banner h3 {
+        margin: 280px auto 0;
+        width: 200px;
+        line-height: 28px;
+        font-size: 22px;
+        color: #fff;
+        text-align: center; }
+      .main .tanchuang2 .banner .text {
+        margin-top: 20px;
+        width: 278px;
+        height: 94px;
+        border-radius: 6px;
+        background: #fff;
+        padding: 8px;
+        font-size: 16px;
+        line-height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main .tanchuang2 .banner .text i {
+          color: red; }
   .main .sidebar {
     position: fixed;
     left: 0;

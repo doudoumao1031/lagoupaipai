@@ -3,6 +3,7 @@
 .main{
     padding: 16px 0;
     .tanchuang{
+        z-index: 1;
         position: fixed;
         top: 0;
         left: 0;
@@ -70,6 +71,49 @@
                 font-size: 16px;
                 margin: 16px auto;
             }
+        }
+    }
+    .tanchuang2{
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,.3);
+        @include flex-c;
+        .banner{
+            width: 775px;
+            height: 550px;
+            // @include flex-c;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            @include bg-full('zhongbiao_bg.png');
+            h3{
+                margin: 280px auto 0;
+                width: 200px;
+                line-height: 28px;
+                font-size: 22px;
+                color: #fff;
+                text-align: center
+            }
+            .text{
+                margin-top: 20px;
+                width: 278px;
+                height: 94px;
+                border-radius: 6px;
+                background: #fff;
+                padding: 8px;
+                font-size: 16px;
+                line-height: 26px;
+                @include flex-c;
+                i{
+                    color: red;
+                }
+            }
+
         }
     }
     .sidebar{

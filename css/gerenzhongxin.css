@@ -1,3 +1,106 @@
+.tanchuang {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3); }
+  .tanchuang .banner.wenjian {
+    width: 580px;
+    height: 460px;
+    border: 4px solid rgba(0, 0, 0, 0.4);
+    margin: 280px auto 0;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+    .tanchuang .banner.wenjian .top {
+      padding: 0 15px;
+      width: 100%;
+      height: 40px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e9e9e9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #eeeeee;
+      flex-grow: 0;
+      font-size: 16px;
+      color: #666666; }
+      .tanchuang .banner.wenjian .top i {
+        font-size: 24px; }
+        .tanchuang .banner.wenjian .top i:hover {
+          cursor: pointer; }
+    .tanchuang .banner.wenjian .line {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .tanchuang .banner.wenjian .line .title {
+        width: 90px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #666666; }
+      .tanchuang .banner.wenjian .line input {
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #e9e9e9;
+        background: #fff; }
+      .tanchuang .banner.wenjian .line label {
+        margin-left: 15px;
+        width: 80px;
+        height: 40px;
+        background: #ca0f1c;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #fff; }
+        .tanchuang .banner.wenjian .line label:hover {
+          cursor: pointer; }
+    .tanchuang .banner.wenjian .cont {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      flex-wrap: wrap; }
+      .tanchuang .banner.wenjian .cont .item {
+        flex-shrink: 0;
+        border-radius: 3px;
+        margin: 9px;
+        width: 116px;
+        height: 116px;
+        box-sizing: border-box;
+        border: 1px solid #e9e9e9;
+        background: #fcfcfc; }
+    .tanchuang .banner.wenjian .btns {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .tanchuang .banner.wenjian .btns button {
+        flex-grow: 0;
+        width: 128px;
+        height: 42px;
+        border-radius: 4px;
+        background: #ca0f1c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        margin: 16px 8px; }
+        .tanchuang .banner.wenjian .btns button.cancel {
+          background: #fff;
+          color: #ca0f1c;
+          border: 1px solid #ca0f1c; }
+
 .main .section {
   padding-top: 20px;
   display: flex;
@@ -395,6 +498,17 @@
                   height: 49px; }
                 .main .section .content .cell .zhifujilu .cont table tr td.gray {
                   color: #999999; }
+                .main .section .content .cell .zhifujilu .cont table tr td:nth-last-of-type(1) {
+                  width: 126px; }
+                .main .section .content .cell .zhifujilu .cont table tr td a.r {
+                  font-size: 14px;
+                  color: #ca0f1c; }
+                .main .section .content .cell .zhifujilu .cont table tr td a.b {
+                  font-size: 14px;
+                  color: #167fd0; }
+                .main .section .content .cell .zhifujilu .cont table tr td a:hover {
+                  cursor: pointer;
+                  text-decoration: underline; }
         .main .section .content .cell .zhifujilu .fenye {
           width: 100%;
           height: 123px;
@@ -446,6 +560,8 @@
           height: 34px; }
           .main .section .content .cell .gerenziliao .line.idcard {
             height: 172px; }
+            .main .section .content .cell .gerenziliao .line.idcard .val img {
+              margin-right: 15px; }
             .main .section .content .cell .gerenziliao .line.idcard .val .cont .reg {
               display: none; }
               .main .section .content .cell .gerenziliao .line.idcard .val .cont .reg.show {

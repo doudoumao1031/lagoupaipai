@@ -46,10 +46,12 @@ body {
         .main .sidebar .flip .item.active span, .main .sidebar .flip .item:hover span {
           color: #fff; }
     .main .sidebar .flip .panel {
-      display: none; }
+      display: none;
+      overflow: hidden; }
       .main .sidebar .flip .panel .element {
         height: 40px;
         width: 100%;
+        box-sizing: border-box;
         background: #f8f8f8;
         padding-left: 50px;
         display: flex;
