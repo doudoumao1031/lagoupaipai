@@ -5,9 +5,15 @@
 .main .section1 .title {
   width: 100%;
   height: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .main .section1 .title .banner {
     background: url("../img/baoxiangongsi_title.png") no-repeat 0 0/100% 100%;
     width: 503px;
@@ -15,20 +21,36 @@
 .main .section1 .content {
   margin: 0 auto;
   width: 1060px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  flex-wrap: wrap; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .main .section1 .content .item {
     width: 340px;
     height: 202px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 1px solid #e9e9e9;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 22px;
     background: #ffffff;
     font-size: 14px;
@@ -53,9 +75,15 @@
 .main .section2 .title {
   width: 100%;
   height: 192px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .main .section2 .title .banner {
     background: url("../img/baoxiangongsi_title2.png") no-repeat 0 0/100% 100%;
     width: 432px;
@@ -63,23 +91,38 @@
 .main .section2 .content {
   margin: 0 auto;
   width: 1060px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 62px; }
   .main .section2 .content .item {
     height: 117px;
     width: 176.5px;
     background: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 1px solid #efefef;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 0; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
     .main .section2 .content .item .banner {
       width: 80%;
       height: 80%; }
 
-/*# sourceMappingURL=baoxiangongsi.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvYmFveGlhbmdvbmdzaS5zY3NzIiwiLi4vc2Nzcy9taXhpbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdJO0VBQ0ksY0FBYTtFQUNiLFlBQVc7RUNTZixxRUFBMEQsRUFBQTtBREp0RDtFQUNJLFlBQVc7RUFDWCxjQUFhO0VBQ2IscUJBQWE7RUFBYixxQkFBYTtFQUFiLGNBQWE7RUFDYix5QkFBdUI7TUFBdkIsc0JBQXVCO1VBQXZCLHdCQUF1QjtFQUN2QiwwQkFBbUI7TUFBbkIsdUJBQW1CO1VBQW5CLG9CQUFtQixFQUFBO0VBQ25CO0lDTlIsMEVBQTBEO0lEUTlDLGFBQVk7SUFDWixhQUFZLEVBQUE7QUFHcEI7RUFDSSxlQUFjO0VBQ2QsY0FBYTtFQUNiLHFCQUFhO0VBQWIscUJBQWE7RUFBYixjQUFhO0VBQ2IsMEJBQThCO01BQTlCLHVCQUE4QjtVQUE5QiwrQkFBOEI7RUFDOUIsMEJBQXlCO01BQXpCLDBCQUF5QjtFQUN6QixvQkFBZTtNQUFmLGdCQUFlLEVBQUE7RUFDZjtJQUNJLGFBQVk7SUFDWixjQUFhO0lBQ2IsK0JBQXNCO1lBQXRCLHVCQUFzQjtJQUN0QiwwQkFBeUI7SUFDekIsb0JBQW1CO0lBQ25CLHFCQUFhO0lBQWIscUJBQWE7SUFBYixjQUFhO0lBQ2IsNkJBQXNCO0lBQXRCLDhCQUFzQjtRQUF0QiwyQkFBc0I7WUFBdEIsdUJBQXNCO0lBQ3RCLHdCQUEyQjtRQUEzQixxQkFBMkI7WUFBM0IsNEJBQTJCO0lBQzNCLDBCQUFtQjtRQUFuQix1QkFBbUI7WUFBbkIsb0JBQW1CO0lBQ25CLGNBQWE7SUFDYixvQkFBbUI7SUFLbkIsZ0JBQWU7SUFDZixlQUF5QjtJQUN6QixtQkFBa0I7SUFDbEIsb0JBQW1CLEVBQUE7SUFQbkI7TUFDSSxlQUFjO01BQ2QsZ0JBQWUsRUFBQTtJQU1uQjtNQUNJLGdCQUFlO01BQ2YsZUFBc0I7TUFDdEIsb0JBQW1CLEVBQUE7SUFFdkI7TUFFSSxnQkFBZTtNQUNmLG9CQUFtQjtNQUNuQix1QkFBc0IsRUFBQTtNQUN0QjtRQUNJLHVCQUFzQixFQUFBO01BRTFCO1FBQ0ksdUJBQXNCLEVBQUE7QUFPdEM7RUFDSSxZQUFXO0VBQ1gsY0FBYTtFQUNiLHFCQUFhO0VBQWIscUJBQWE7RUFBYixjQUFhO0VBQ2IseUJBQXVCO01BQXZCLHNCQUF1QjtVQUF2Qix3QkFBdUI7RUFDdkIsMEJBQW1CO01BQW5CLHVCQUFtQjtVQUFuQixvQkFBbUIsRUFBQTtFQUNuQjtJQ2xFUiwyRUFBMEQ7SURvRTlDLGFBQVk7SUFDWixhQUFZLEVBQUE7QUFHcEI7RUFDSSxlQUFjO0VBQ2QsY0FBYTtFQUNiLHFCQUFhO0VBQWIscUJBQWE7RUFBYixjQUFhO0VBQ2Isd0JBQTJCO01BQTNCLHFCQUEyQjtVQUEzQiw0QkFBMkI7RUFDM0IsMEJBQXlCO01BQXpCLDBCQUF5QjtFQUN6QixvQkFBZTtNQUFmLGdCQUFlO0VBQ2Ysb0JBQW1CLEVBQUE7RUFDbkI7SUFDSSxjQUFhO0lBQ2IsZUFBYztJQUNkLGlCQUFnQjtJQUNoQiwrQkFBc0I7WUFBdEIsdUJBQXNCO0lBQ3RCLDBCQUF5QjtJQUN6QixxQkFBYTtJQUFiLHFCQUFhO0lBQWIsY0FBYTtJQUNiLHlCQUF1QjtRQUF2QixzQkFBdUI7WUFBdkIsd0JBQXVCO0lBQ3ZCLDBCQUFtQjtRQUFuQix1QkFBbUI7WUFBbkIsb0JBQW1CO0lBQ25CLG9CQUFZO1FBQVoscUJBQVk7WUFBWixhQUFZLEVBQUE7SUFDWjtNQUNJLFdBQVU7TUFDVixZQUFXLEVBQUEiLCJmaWxlIjoiYmFveGlhbmdvbmdzaS5jc3MifQ== */

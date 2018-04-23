@@ -9,9 +9,11 @@ body {
   font-family: "Microsoft YaHei",'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  user-select: none;
-  font-size: 16px;
-  font-size: 0.16rem; }
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 16px; }
 
 i {
   font-style: normal; }
@@ -42,4 +44,4 @@ input {
   border: none;
   outline: none; }
 
-/*# sourceMappingURL=reset.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvcmVzZXQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFVBQVM7RUFDVCxXQUFVLEVBQUE7O0FBR2Q7RUFDSSxjQUFhLEVBQUE7O0FBRWpCO0VBQ0ksc0VBQXFFO0VBQ3JFLG9DQUFtQztFQUNuQyxtQ0FBa0M7RUFDbEMsMEJBQWlCO0tBQWpCLHVCQUFpQjtNQUFqQixzQkFBaUI7VUFBakIsa0JBQWlCO0VBR2pCLGdCQUFlLEVBQUE7O0FBR25CO0VBQ0ksbUJBQWtCLEVBQUE7O0FBRXRCO0VBQ0ksZUFBeUI7RUFDekIsc0JBQXFCLEVBQUE7O0FBRXpCO0VBQ0ksaUJBQWdCLEVBQUE7O0FBRXBCO0VBQ0ksaUJBQWdCO0VBQ2hCLGFBQVk7RUFDWixjQUFhLEVBQUE7O0FBRWpCO0VBQ0ksaUJBQWdCO0VBQ2hCLGFBQVk7RUFDWixjQUFhLEVBQUE7O0FBRWpCO0VBQ0ksZ0JBQWUsRUFBQTs7QUFFbkI7RUFDSSxzRUFBcUU7RUFDckUsd0JBQXVCO0VBQ3ZCLGFBQVk7RUFDWixjQUFhLEVBQUEiLCJmaWxlIjoicmVzZXQuY3NzIn0= */

@@ -9,9 +9,15 @@ body {
 .main {
   margin: 0 auto;
   width: 1060px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 20px; }
   .main .sidebar {
     width: 209px; }
@@ -26,9 +32,15 @@ body {
       height: 60px;
       width: 100%;
       background: #dddddd;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .main .sidebar .flip .item .name {
         font-size: 14px;
         color: #333333;
@@ -52,9 +64,15 @@ body {
         width: 100%;
         background: #f8f8f8;
         padding-left: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 14px; }
         .main .sidebar .flip .panel .element.active, .main .sidebar .flip .panel .element:hover {
           color: #e72331;
@@ -64,25 +82,41 @@ body {
     .main .content .top {
       width: 100%;
       height: 27px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start; }
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
       .main .content .top span {
         font-size: 14px;
         color: #666666; }
     .main .content .infos {
       width: 100%;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       border: 1px solid #e9e9e9;
       padding: 0 13px;
       background: #fff;
       margin-bottom: 44px; }
       .main .content .infos .article {
         padding: 24px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center; }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .main .content .infos .article .title {
           font-size: 22px;
           color: #333333;
@@ -92,10 +126,13 @@ body {
           color: #999999;
           margin-bottom: 40px; }
         .main .content .infos .article p {
+          text-indent: 0 !important;
+          margin-left: 0 !important;
+          line-height: 1.5 !important;
           font-size: 14px;
           color: #666666;
           margin-bottom: 30px;
           width: 100%;
           text-align: left; }
 
-/*# sourceMappingURL=newscenter_detail.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvbmV3c2NlbnRlcl9kZXRhaWwuc2NzcyIsIi4uL3Njc3MvbWl4aW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLG9CQUFtQixFQUFBOztBQUV2QjtFQUNJLFlBQVc7RUFDWCxjQUFhO0VDR2IsNERBQTBELEVBQUE7O0FEQTlEO0VBQ0ksZUFBYztFQUNkLGNBQWE7RUFDYixxQkFBYTtFQUFiLHFCQUFhO0VBQWIsY0FBYTtFQUNiLDBCQUE4QjtNQUE5Qix1QkFBOEI7VUFBOUIsK0JBQThCO0VBQzlCLHlCQUF1QjtNQUF2QixzQkFBdUI7VUFBdkIsd0JBQXVCO0VBQ3ZCLGtCQUFpQixFQUFBO0VBQ2pCO0lBQ0ksYUFBWSxFQUFBO0lBQ1o7TUFDSSxZQUFXO01BQ1gsYUFBWTtNQ1hwQix1RUFBMEQsRUFBQTtJRGdCOUM7TUFDSSxlQUFjLEVBQUE7SUFHdEI7TUFDSSw4QkFBNkI7TUFDN0IsYUFBWTtNQUNaLFlBQVc7TUFDWCxvQkFBbUI7TUFDbkIscUJBQWE7TUFBYixxQkFBYTtNQUFiLGNBQWE7TUFDYiwwQkFBOEI7VUFBOUIsdUJBQThCO2NBQTlCLCtCQUE4QjtNQUM5QiwwQkFBbUI7VUFBbkIsdUJBQW1CO2NBQW5CLG9CQUFtQixFQUFBO01BQ25CO1FBQ0ksZ0JBQWU7UUFDZixlQUFzQjtRQUN0QixtQkFBa0I7UUFDbEIsa0JBQWlCLEVBQUE7TUFFckI7UUFDSSxnQkFBZTtRQUNmLGVBQWM7UUFDZCxtQkFBa0IsRUFBQTtNQUV0QjtRQUVJLG9CQUFtQjtRQUNuQixnQkFBZSxFQUFBO1FBQ2Y7VUFDSSxZQUFXLEVBQUE7UUFFZjtVQUNJLFlBQVcsRUFBQTtJQUl2QjtNQUNJLGNBQWEsRUFBQTtNQUNiO1FBQ0ksYUFBWTtRQUNaLFlBQVc7UUFDWCxvQkFBa0I7UUFFbEIsbUJBQWtCO1FBQ2xCLHFCQUFhO1FBQWIscUJBQWE7UUFBYixjQUFhO1FBQ2Isd0JBQTJCO1lBQTNCLHFCQUEyQjtnQkFBM0IsNEJBQTJCO1FBQzNCLDBCQUFtQjtZQUFuQix1QkFBbUI7Z0JBQW5CLG9CQUFtQjtRQUNuQixnQkFBZSxFQUFBO1FBQ2Y7VUFFSSxlQUFjO1VBQ2QsZ0JBQWUsRUFBQTtFQU9uQztJQUNJLGFBQVksRUFBQTtJQUNaO01BQ0ksWUFBVztNQUNYLGFBQVk7TUFDWixxQkFBYTtNQUFiLHFCQUFhO01BQWIsY0FBYTtNQUNiLHdCQUEyQjtVQUEzQixxQkFBMkI7Y0FBM0IsNEJBQTJCO01BQzNCLHlCQUF1QjtVQUF2QixzQkFBdUI7Y0FBdkIsd0JBQXVCLEVBQUE7TUFDdkI7UUFDSSxnQkFBZTtRQUNmLGVBQXlCLEVBQUE7SUFHakM7TUFDSSxZQUFXO01BQ1gsK0JBQXNCO2NBQXRCLHVCQUFzQjtNQUN0QiwwQkFBeUI7TUFDekIsZ0JBQWU7TUFDZixpQkFBZ0I7TUFDaEIsb0JBQW1CLEVBQUE7TUFDbkI7UUFDSSxjQUFhO1FBQ2IscUJBQWE7UUFBYixxQkFBYTtRQUFiLGNBQWE7UUFDYiw2QkFBc0I7UUFBdEIsOEJBQXNCO1lBQXRCLDJCQUFzQjtnQkFBdEIsdUJBQXNCO1FBQ3RCLHdCQUEyQjtZQUEzQixxQkFBMkI7Z0JBQTNCLDRCQUEyQjtRQUMzQiwwQkFBbUI7WUFBbkIsdUJBQW1CO2dCQUFuQixvQkFBbUIsRUFBQTtRQUNuQjtVQUNJLGdCQUFlO1VBQ2YsZUFBc0I7VUFDdEIsb0JBQW1CLEVBQUE7UUFFdkI7VUFDSSxnQkFBZTtVQUNmLGVBQXlCO1VBQ3pCLG9CQUFtQixFQUFBO1FBRXZCO1VBQ0ksMEJBQXdCO1VBQ3hCLDBCQUF3QjtVQUN4Qiw0QkFBMEI7VUFDMUIsZ0JBQWU7VUFDZixlQUF5QjtVQUN6QixvQkFBbUI7VUFDbkIsWUFBVztVQUNYLGlCQUFnQixFQUFBIiwiZmlsZSI6Im5ld3NjZW50ZXJfZGV0YWlsLmNzcyJ9 */

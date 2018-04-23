@@ -4,23 +4,34 @@
   position: relative;
   padding-top: 51px; }
   .main .belt {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0 0 103px;
     height: 446px;
     width: 100%;
     background: url("../img/login_bg.jpg") no-repeat 0 0/100% 100%; }
   .main .form {
     width: 409px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 4px solid rgba(0, 0, 0, 0.2);
     position: absolute;
     right: 125px;
     background: #ffffff;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .main .form.zhuce {
       top: 35px;
       height: 530px; }
@@ -30,7 +41,8 @@
     .main .form .title {
       width: 100%;
       height: 35px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       border-bottom: 1px solid #eeeeee;
       font-size: 16px;
       text-transform: uppercase;
@@ -39,13 +51,20 @@
       width: 100%;
       height: 42px;
       margin-bottom: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .main .form .line input {
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         border: 1px solid #dddddd;
         border-radius: 2px;
         background: #eeeeee;
@@ -53,7 +72,8 @@
         padding: 0 15px; }
         .main .form .line input.yzm {
           width: 196px;
-          align-self: flex-start; }
+          -ms-flex-item-align: start;
+              align-self: flex-start; }
       .main .form .line .btn {
         width: 153px;
         height: 100%;
@@ -61,38 +81,58 @@
         background: #6da2da;
         color: #fff;
         font-size: 14px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center; }
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .main .form .line .btn:hover {
           cursor: pointer; }
       .main .form .line img {
         width: 153px;
         height: 100%;
         border-radius: 2px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         border: 1px solid #dddddd;
         border-radius: 2px; }
     .main .form .text {
       height: 15px;
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       color: #ca0f1c; }
     .main .form .confirm {
       width: 100%;
       height: 42px;
       border-radius: 2px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       background: #ca0f1c;
       font-size: 16px;
       color: #fff;
       margin: 10px 0 20px; }
     .main .form .info {
-      align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
       margin-bottom: 40px;
       font-size: 14px;
       color: #999999; }
@@ -103,4 +143,4 @@
         color: #f0313e;
         text-decoration: underline; }
 
-/*# sourceMappingURL=zhuce.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3Mvemh1Y2Uuc2NzcyIsIi4uL3Njc3MvbWl4aW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGVBQWM7RUFDZCx5QkFBd0I7RUFDeEIsbUJBQWtCO0VBQ2xCLGtCQUFpQixFQUFBO0VBQ2pCO0lBQ0ksK0JBQXNCO1lBQXRCLHVCQUFzQjtJQUN0QixrQkFBaUI7SUFDakIsY0FBYTtJQUNiLFlBQVc7SUNEZiwrREFBMEQsRUFBQTtFREkxRDtJQUNJLGFBQVk7SUFFWiwrQkFBc0I7WUFBdEIsdUJBQXNCO0lBQ3RCLHFDQUFnQztJQUNoQyxtQkFBa0I7SUFDbEIsYUFBWTtJQUNaLG9CQUFtQjtJQUNuQixjQUFhO0lBQ2IscUJBQWE7SUFBYixxQkFBYTtJQUFiLGNBQWE7SUFDYiw2QkFBc0I7SUFBdEIsOEJBQXNCO1FBQXRCLDJCQUFzQjtZQUF0Qix1QkFBc0I7SUFDdEIsd0JBQTJCO1FBQTNCLHFCQUEyQjtZQUEzQiw0QkFBMkI7SUFDM0IsMEJBQW1CO1FBQW5CLHVCQUFtQjtZQUFuQixvQkFBbUIsRUFBQTtJQUNuQjtNQUNJLFVBQVM7TUFDVCxjQUFhLEVBQUE7SUFFakI7TUFDSSxVQUFRO01BQ1IsY0FBYSxFQUFBO0lBRWpCO01BQ0ksWUFBVztNQUNYLGFBQVk7TUFDWiwrQkFBc0I7Y0FBdEIsdUJBQXNCO01BQ3RCLGlDQUFnQztNQUNoQyxnQkFBZTtNQUNmLDBCQUF5QjtNQUN6QixvQkFBbUIsRUFBQTtJQUV2QjtNQUNJLFlBQVc7TUFDWCxhQUFZO01BQ1osb0JBQW1CO01BQ25CLHFCQUFhO01BQWIscUJBQWE7TUFBYixjQUFhO01BQ2IsMEJBQThCO1VBQTlCLHVCQUE4QjtjQUE5QiwrQkFBOEI7TUFDOUIsMEJBQW1CO1VBQW5CLHVCQUFtQjtjQUFuQixvQkFBbUIsRUFBQTtNQUNuQjtRQUNJLFlBQVc7UUFDWCxhQUFZO1FBQ1osK0JBQXNCO2dCQUF0Qix1QkFBc0I7UUFDdEIsMEJBQXlCO1FBQ3pCLG1CQUFrQjtRQUNsQixvQkFBbUI7UUFDbkIsZ0JBQWU7UUFFZixnQkFBZSxFQUFBO1FBQ2Y7VUFDSSxhQUFZO1VBQ1osMkJBQXNCO2NBQXRCLHVCQUFzQixFQUFBO01BRzlCO1FBQ0ksYUFBWTtRQUNaLGFBQVk7UUFDWixtQkFBa0I7UUFDbEIsb0JBQW1CO1FBQ25CLFlBQVc7UUFDWCxnQkFBZTtRQ2xDM0IscUJBQWE7UUFBYixxQkFBYTtRQUFiLGNBQWE7UUFDYix5QkFBdUI7WUFBdkIsc0JBQXVCO2dCQUF2Qix3QkFBdUI7UUFDdkIsMEJBQW1CO1lBQW5CLHVCQUFtQjtnQkFBbkIsb0JBQW1CLEVBQUE7UURrQ1A7VUFDSSxnQkFBZSxFQUFBO01BR3ZCO1FBQ0ksYUFBWTtRQUNaLGFBQVk7UUFDWixtQkFBa0I7UUFDbEIsK0JBQXNCO2dCQUF0Qix1QkFBc0I7UUFDdEIsMEJBQXlCO1FBQ3pCLG1CQUFrQixFQUFBO0lBRzFCO01BQ0ksYUFBWTtNQUNaLFlBQVc7TUNuRG5CLHFCQUFhO01BQWIscUJBQWE7TUFBYixjQUFhO01BQ2IseUJBQXVCO1VBQXZCLHNCQUF1QjtjQUF2Qix3QkFBdUI7TUFDdkIsMEJBQW1CO1VBQW5CLHVCQUFtQjtjQUFuQixvQkFBbUI7TURtRFgsZUMzRkEsRUFBQTtJRDZGSjtNQUNJLFlBQVc7TUFDWCxhQUFZO01BQ1osbUJBQWtCO01DMUQxQixxQkFBYTtNQUFiLHFCQUFhO01BQWIsY0FBYTtNQUNiLHlCQUF1QjtVQUF2QixzQkFBdUI7Y0FBdkIsd0JBQXVCO01BQ3ZCLDBCQUFtQjtVQUFuQix1QkFBbUI7Y0FBbkIsb0JBQW1CO01EMkRYLG9CQUFtQjtNQUNuQixnQkFBZTtNQUNmLFlBQVc7TUFDWCxvQkFBbUIsRUFBQTtJQUV2QjtNQUNJLHlCQUFvQjtVQUFwQixxQkFBb0I7TUFTcEIsb0JBQW1CO01BQ25CLGdCQUFlO01BQ2YsZUFBeUIsRUFBQTtNQVZ6QjtRQUNJLGVBQXlCO1FBQ3pCLGlCQUFnQixFQUFBO01BRXBCO1FBQ0ksZUFBYztRQUNkLDJCQUEwQixFQUFBIiwiZmlsZSI6InpodWNlLmNzcyJ9 */
